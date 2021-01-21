@@ -46,6 +46,7 @@ body {
   position: fixed;
   -webkit-box-shadow: 0px 32px 80px rgba(57, 57, 57, 0.05);
           box-shadow: 0px 32px 80px rgba(57, 57, 57, 0.05);
+  z-index: 999;
 }
 
 .nav-desktop .content {
@@ -162,6 +163,7 @@ body {
 
 .beli-tryout-detail .info-detail-tryout {
   padding-top: 80px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,5 +370,138 @@ body {
           box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
   -webkit-transition: 300ms;
   transition: 300ms;
+}
+
+.beli-tryout-detail .info-mapel-tryout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content {
+  width: 90%;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content nav .navigation {
+  width: 50%;
+  padding: 10px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content nav .navigation h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content nav .navigation:hover {
+  border-bottom: 3px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content nav .nav-left.active {
+  border-bottom: 3px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content nav .nav-right.active {
+  border-bottom: 3px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-1 {
+  z-index: 1;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-2 {
+  z-index: 2;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-3 {
+  z-index: 3;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-4 {
+  z-index: 4;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-5 {
+  z-index: 4;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card {
+  width: 350px;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 57, 57, 0.08);
+          box-shadow: 0px 10px 30px rgba(57, 57, 57, 0.08);
+  border-radius: 20px;
+  padding: 30px 20px 20px 20px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-heading i {
+  margin-right: 20px;
+  color: #FDBF1F;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-heading h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-body li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-body li i {
+  margin-right: 20px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-body li h4 {
+  font-size: 14px;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card .card-body li h4 span {
+  font-weight: 600;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tka.disable {
+  display: none;
+}
+
+.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tps.disable {
+  display: none;
 }
 /*# sourceMappingURL=desktop-style.css.map */
