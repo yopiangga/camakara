@@ -136,3 +136,191 @@ body {
         }
     }
 }
+
+
+
+.beli-tryout-detail {
+
+    .info-detail-tryout {
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 90%;
+            display: flex;
+
+            .content-left {
+                width: 50%;
+
+                .nama-tryout {
+                    margin-top: 50px;
+                    position: relative;
+                    display: flex;
+                    margin-bottom: 30px;
+
+                    h2 {
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: 600;
+                        margin-right: 20px;
+                    }
+
+                    hr {
+                        position: absolute;
+                        width: 50px;
+                        bottom: -10px;
+                        left: 5px;
+                        color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                    }
+
+                    .btn-daftar {
+                        padding: 10px 20px 10px 20px;
+                        background-color: white;
+                        border: 1px solid $colorYellow;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        color: $colorYellow;
+                        cursor: pointer;
+                    }
+
+                    .btn-daftar:hover {
+                        background-color: $colorYellow;
+                        color: white;
+                        border: 1px solid $colorYellow;
+                        transition: 300ms;
+                    }
+                }
+
+                .widget {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 30px;
+
+                    .widget-child {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: 30px;
+                        width: 120px;
+                        text-align: center;
+                        line-height: 21px;
+
+                        i {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .deskripsi-tryout {
+                    position: relative;
+
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                    hr {
+                        position: absolute;
+                        width: 50px;
+                        top: 18px;
+                        left: 0px;
+                        color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                    }
+
+                    p {
+                        line-height: 28px;
+                    }
+                }
+            }
+
+            .content-right {
+                padding-left: 20px;
+                box-sizing: border-box;
+
+                .tanggal-pengerjaan {
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    position: relative;
+
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                    }
+
+                    hr {
+                        position: absolute;
+                        width: 50px;
+                        top: 18px;
+                        left: 0px;
+                        color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                    }
+
+                    p {
+                        line-height: 28px;
+                        margin-bottom: 20px;
+                    }
+
+                    .waktu-pengerjaan {
+                        display: flex;
+
+                        .box {
+                            width: 60px;
+                            height: 60px;
+                            background-color: white;
+                            margin-right: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                            border: 2px solid $colorYellow;
+
+                            h4 {
+                                font-weight: 600;
+                                margin-bottom: 5px;
+                            }
+
+                            h6 {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .beli-tryout {
+
+                    .btn-beli-tryout {
+                        padding: 12px 25px 12px 25px;
+                        background-color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $colorDark;
+                        cursor: pointer;
+                    }
+                    
+                    .btn-beli-tryout:hover {
+                        padding: 12px 25px 12px 25px;
+                        background-color: white;
+                        border: 1px solid $colorYellow;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        color: $colorYellow;
+                        cursor: pointer;
+                        box-shadow: 0px 60px 100px rgba($color: $colorYellow, $alpha: 0.16);
+                        transition: 300ms;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

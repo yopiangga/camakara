@@ -159,4 +159,214 @@ body {
 .nav-desktop .content .icon .icon-profile i {
   color: #FDBF1F;
 }
+
+.beli-tryout-detail .info-detail-tryout {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beli-tryout-detail .info-detail-tryout .content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left {
+  width: 50%;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .nama-tryout {
+  margin-top: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .nama-tryout h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .nama-tryout hr {
+  position: absolute;
+  width: 50px;
+  bottom: -10px;
+  left: 5px;
+  color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .nama-tryout .btn-daftar {
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border: 1px solid #FDBF1F;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #FDBF1F;
+  cursor: pointer;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .nama-tryout .btn-daftar:hover {
+  background-color: #FDBF1F;
+  color: white;
+  border: 1px solid #FDBF1F;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .widget .widget-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  width: 120px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .widget .widget-child i {
+  margin-bottom: 15px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout {
+  position: relative;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout hr {
+  position: absolute;
+  width: 50px;
+  top: 18px;
+  left: 0px;
+  color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout p {
+  line-height: 28px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right {
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan hr {
+  position: absolute;
+  width: 50px;
+  top: 18px;
+  left: 0px;
+  color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan p {
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan .box {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  border: 2px solid #FDBF1F;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan .box h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan .box h6 {
+  font-size: 14px;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .beli-tryout .btn-beli-tryout {
+  padding: 12px 25px 12px 25px;
+  background-color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #393939;
+  cursor: pointer;
+}
+
+.beli-tryout-detail .info-detail-tryout .content .content-right .beli-tryout .btn-beli-tryout:hover {
+  padding: 12px 25px 12px 25px;
+  background-color: white;
+  border: 1px solid #FDBF1F;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #FDBF1F;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
+          box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
 /*# sourceMappingURL=desktop-style.css.map */
