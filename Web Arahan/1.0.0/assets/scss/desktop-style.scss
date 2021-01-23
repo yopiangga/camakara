@@ -51,6 +51,10 @@ body {
     input:focus {
         outline: none;
     }
+
+    textarea:focus {
+        outline: none;
+    }
 }
 
 
@@ -138,10 +142,19 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 width: 110px;
+                cursor: pointer;
 
                 i {
                     color: $colorYellow;
                 }
+            }
+
+            .icon-profile:hover {
+                color: $colorYellow;
+            }
+
+            .icon-profile.active {
+                color: $colorYellow;
             }
         }
     }
@@ -537,6 +550,237 @@ body {
                             
                         }
 
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Edit Profile Page
+.profile-page {
+    
+    .main {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 90%;
+
+            .content-heading {
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                display: flex;
+
+                .img-profile {
+                    position: relative;
+
+                    .circle-image {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        background-position: center;
+                        background-size: 250px;
+                    }
+
+                    .circle-edit {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        position: absolute;
+                        right: 0;
+                        top: 100px;
+                        background-color: $colorYellow;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        cursor: pointer;
+
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .title-profile {
+                    padding-left: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        color: $colorDark;
+                    }
+                }
+            }
+
+            .content-body {
+                form {
+
+                    .form {
+                        display: flex;
+                        margin-bottom: 50px;
+
+                        .form-left {
+                            width: 50%;
+                            box-sizing: border-box;
+                            padding-right: 20px;
+                            position: relative;
+
+                            h2 {
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin-bottom: 50px;
+                            }
+
+                            hr {
+                                width: 50px;
+                                position: absolute;
+                                border: 1px solid $colorYellow;
+                                background-color: $colorYellow;
+                                top: 25px;
+                            }
+
+                            .row {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 30px;
+
+                                .col-6 {
+                                    width: 48%;
+
+                                    .form-group {
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        label {
+                                            font-weight: 600;
+                                            margin-bottom: 5px;
+                                        }
+
+                                        input {
+                                            border-radius: 5px;
+                                            height: 40px;
+                                            border: 1px solid $colorGray;
+                                            box-sizing: border-box;
+                                            padding: 10px 20px 10px 20px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .form-group {
+                                display: flex;
+                                flex-direction: column;
+
+                                label {
+                                    font-weight: 600;
+                                    margin-bottom: 5px;
+                                }
+
+                                textarea {
+                                    border-radius: 5px;
+                                    height: 100px;
+                                    border: 1px solid $colorGray;
+                                    box-sizing: border-box;
+                                    padding: 10px 20px 10px 20px;
+                                }
+                            }
+                        }
+
+                        .form-right {
+                            width: 50%;
+                            box-sizing: border-box;
+                            padding-left: 50px;
+                            position: relative;
+
+                            h2 {
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin-bottom: 50px;
+                            }
+
+                            hr {
+                                width: 50px;
+                                position: absolute;
+                                border: 1px solid $colorYellow;
+                                background-color: $colorYellow;
+                                top: 25px;
+                            }
+
+                            .pilihan-universitas {
+                                margin-bottom: 30px;
+
+                                h4 {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    margin-bottom: 20px;
+                                }
+
+                                .content-universitas {
+                                    display: flex;
+
+                                    .image {
+                                        width: 50px;
+                                        height: 50px;
+                                        overflow: hidden;
+                                        border-radius: 100%;
+                                        margin-right: 20px;
+                                        background-position: center;
+                                        background-size: 100px;
+                                    }
+
+                                    .form-group {
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        select {
+                                            border-radius: 5px;
+                                            height: 40px;
+                                            width: 400px;
+                                            border: 1px solid $colorGray;
+                                            box-sizing: border-box;
+                                            padding: 10px 20px 10px 20px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .btn-simpan {
+                        padding: 10px 20px 10px 20px;
+                        background-color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        color: white;
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+
+                    .btn-simpan:hover {
+                        padding: 10px 20px 10px 20px;
+                        background-color: white;
+                        border: 1px solid $colorYellow;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        color: $colorYellow;
+                        cursor: pointer;
+                        transition: 300ms;
                     }
                 }
             }

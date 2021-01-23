@@ -41,6 +41,10 @@ body input:focus {
   outline: none;
 }
 
+body textarea:focus {
+  outline: none;
+}
+
 .nav-desktop {
   background-color: white;
   display: -webkit-box;
@@ -163,9 +167,18 @@ body input:focus {
       -ms-flex-align: center;
           align-items: center;
   width: 110px;
+  cursor: pointer;
 }
 
 .nav-desktop .content .icon .icon-profile i {
+  color: #FDBF1F;
+}
+
+.nav-desktop .content .icon .icon-profile:hover {
+  color: #FDBF1F;
+}
+
+.nav-desktop .content .icon .icon-profile.active {
   color: #FDBF1F;
 }
 
@@ -627,6 +640,276 @@ body input:focus {
   background-color: white;
   border: 1px solid #FDBF1F;
   color: #FDBF1F;
+}
+
+.profile-page .main {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-page .main .content {
+  width: 90%;
+}
+
+.profile-page .main .content .content-heading {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-page .main .content .content-heading .img-profile {
+  position: relative;
+}
+
+.profile-page .main .content .content-heading .img-profile .circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: 250px;
+}
+
+.profile-page .main .content .content-heading .img-profile .circle-edit {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background-color: #FDBF1F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-page .main .content .content-heading .img-profile .circle-edit i {
+  font-size: 14px;
+}
+
+.profile-page .main .content .content-heading .title-profile {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-page .main .content .content-heading .title-profile h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-page .main .content .content-heading .title-profile h4 {
+  font-size: 16px;
+  color: #393939;
+}
+
+.profile-page .main .content .content-body form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.profile-page .main .content .content-body form .form .form-left {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 20px;
+  position: relative;
+}
+
+.profile-page .main .content .content-body form .form .form-left h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.profile-page .main .content .content-body form .form .form-left hr {
+  width: 50px;
+  position: absolute;
+  border: 1px solid #FDBF1F;
+  background-color: #FDBF1F;
+  top: 25px;
+}
+
+.profile-page .main .content .content-body form .form .form-left .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profile-page .main .content .content-body form .form .form-left .row .col-6 {
+  width: 48%;
+}
+
+.profile-page .main .content .content-body form .form .form-left .row .col-6 .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-page .main .content .content-body form .form .form-left .row .col-6 .form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profile-page .main .content .content-body form .form .form-left .row .col-6 .form-group input {
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px 10px 20px;
+}
+
+.profile-page .main .content .content-body form .form .form-left .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-page .main .content .content-body form .form .form-left .form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profile-page .main .content .content-body form .form .form-left .form-group textarea {
+  border-radius: 5px;
+  height: 100px;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px 10px 20px;
+}
+
+.profile-page .main .content .content-body form .form .form-right {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 50px;
+  position: relative;
+}
+
+.profile-page .main .content .content-body form .form .form-right h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.profile-page .main .content .content-body form .form .form-right hr {
+  width: 50px;
+  position: absolute;
+  border: 1px solid #FDBF1F;
+  background-color: #FDBF1F;
+  top: 25px;
+}
+
+.profile-page .main .content .content-body form .form .form-right .pilihan-universitas {
+  margin-bottom: 30px;
+}
+
+.profile-page .main .content .content-body form .form .form-right .pilihan-universitas h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profile-page .main .content .content-body form .form .form-right .pilihan-universitas .content-universitas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-page .main .content .content-body form .form .form-right .pilihan-universitas .content-universitas .image {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: 100px;
+}
+
+.profile-page .main .content .content-body form .form .form-right .pilihan-universitas .content-universitas .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-page .main .content .content-body form .form .form-right .pilihan-universitas .content-universitas .form-group select {
+  border-radius: 5px;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+}
+
+.profile-page .main .content .content-body form .btn-simpan {
+  padding: 10px 20px 10px 20px;
+  background-color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profile-page .main .content .content-body form .btn-simpan:hover {
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border: 1px solid #FDBF1F;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #FDBF1F;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .beli-tryout-detail .info-detail-tryout {
