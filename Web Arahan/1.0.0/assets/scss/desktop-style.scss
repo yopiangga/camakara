@@ -59,13 +59,13 @@ body {
 
 
 .nav-desktop {
-    background-color: white;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 80px;
     position: fixed;
-    box-shadow: 0px 32px 80px rgba($color: $colorDark, $alpha: 0.05);
+    // box-shadow: 0px 32px 80px rgba($color: $colorDark, $alpha: 0.05);
     z-index: 999;
 
     .content {
@@ -143,6 +143,50 @@ body {
                 align-items: center;
                 width: 110px;
                 cursor: pointer;
+
+                i {
+                    color: $colorYellow;
+                }
+            }
+
+            .icon-profile:hover {
+                color: $colorYellow;
+            }
+
+            .icon-profile.active {
+                color: $colorYellow;
+            }
+        }
+    }
+}
+
+.nav-desktop.active {
+    background-color: white;
+    box-shadow: 0px 32px 80px rgba($color: $colorDark, $alpha: 0.05);
+
+    .content {
+
+        .menu {
+            color: $colorDark;
+
+            ul {
+
+                a {
+                    color: inherit;
+
+                    hr {
+                        color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                    }
+                }
+
+
+            }
+        }
+
+        .icon {
+
+            .icon-profile {
 
                 i {
                     color: $colorYellow;
@@ -554,6 +598,243 @@ body {
                 }
             }
         }
+    }
+}
+
+// Home Page
+.home-page {
+    .nav-desktop {
+        color: white;
+    
+        .content {
+
+            .menu {
+                color: white;
+    
+                ul {
+    
+                    a {
+                        color: inherit;
+    
+                        hr {
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+                    }
+    
+    
+                }
+            }
+    
+            .icon {
+    
+                .icon-profile {
+    
+                    i {
+                        color: $colorYellow;
+                    }
+                }
+    
+                .icon-profile:hover {
+                    color: $colorYellow;
+                }
+    
+                .icon-profile.active {
+                    color: $colorYellow;
+                }
+            }
+        }
+    }
+
+    .nav-desktop.active {
+        color: $colorDark;
+    
+        .content {
+
+            .menu {
+                color: $colorDark;
+    
+                ul {
+    
+                    a {
+                        color: inherit;
+    
+                        hr {
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+                    }
+    
+    
+                }
+            }
+    
+            .icon {
+    
+                .icon-profile {
+    
+                    i {
+                        color: $colorYellow;
+                    }
+                }
+    
+                .icon-profile:hover {
+                    color: $colorYellow;
+                }
+    
+                .icon-profile.active {
+                    color: $colorYellow;
+                }
+            }
+        }
+    }
+
+    .bg-main {
+        position: absolute;
+        background-color: $colorDark;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        height: 650px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .main {
+        width: 100%;
+        height: 650px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        z-index: 2;
+        position: relative;
+
+        .content {
+            width: 90%;
+            color: white;
+            display: flex;
+
+            .content-left {
+                width: 50%;
+                box-sizing: border-box;
+                padding-right: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+
+                h6 {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                h1 {
+                    font-size: 36px;
+                    line-height: 44px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    line-height: 28px;
+                    margin-bottom: 30px;
+                }
+
+                form {
+                    input {
+                        padding: 10px 20px 10px 20px;
+                        width: 300px;
+                        height: 45px;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                    }
+
+                    .btn-searchTryout {
+                        padding: 10px 20px 10px 20px;
+                        height: 45px;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        border: 2px solid $colorYellow;
+                        background-color: $colorYellow;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    .btn-searchTryout:hover {
+                        border: 2px solid $colorYellow;
+                        background-color: transparent;
+                        color: white;
+                        transition: 300ms;
+                    }
+
+                }
+
+                .circle {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 100%;
+                    box-shadow: 0px 20px 30px rgba($color: $colorDark, $alpha: 0.5);
+                    background-color: white;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    i {
+                        color: $colorDark;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .content-right {
+                width: 50%;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .card-group {
+                    position: absolute;
+                    left: 180px;
+
+                    .card {
+                        width: 300px;
+                        position: absolute;
+                        background-color: white;
+                        border-radius: 10px;
+                        box-shadow: 0px 30px 60px rgba($color: $colorDark, $alpha: 0.24);
+                    }
+    
+                    .card-1 {
+                        height: 400px;
+                        left: 0px;
+                        z-index: 3;
+                    }
+                    .card-2 {
+                        height: 340px;
+                        top: 30px;
+                        left: 30px;
+                        z-index: 2;
+                    }
+                    .card-3 {
+                        height: 280px;
+                        top: 60px;
+                        left: 60px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .why-use {
+        width: 100%;
+        height: 1000px;
     }
 }
 
