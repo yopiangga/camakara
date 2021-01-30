@@ -204,6 +204,223 @@ body {
     }
 }
 
+.nav-dark {
+    .nav-desktop {
+        color: white;
+    
+        .content {
+
+            .menu {
+                color: white;
+    
+                ul {
+    
+                    a {
+                        color: inherit;
+    
+                        hr {
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+                    }
+    
+    
+                }
+            }
+    
+            .icon {
+    
+                .icon-profile {
+    
+                    i {
+                        color: $colorYellow;
+                    }
+                }
+    
+                .icon-profile:hover {
+                    color: $colorYellow;
+                }
+    
+                .icon-profile.active {
+                    color: $colorYellow;
+                }
+            }
+        }
+    }
+
+    .nav-desktop.active {
+        color: $colorDark;
+    
+        .content {
+
+            .menu {
+                color: $colorDark;
+    
+                ul {
+    
+                    a {
+                        color: inherit;
+    
+                        hr {
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+                    }
+    
+    
+                }
+            }
+    
+            .icon {
+    
+                .icon-profile {
+    
+                    i {
+                        color: $colorYellow;
+                    }
+                }
+    
+                .icon-profile:hover {
+                    color: $colorYellow;
+                }
+    
+                .icon-profile.active {
+                    color: $colorYellow;
+                }
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background-color: $colorDark;
+
+    .content {
+        padding-top: 80px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+        .body {
+            width: 100%;
+            display: flex;
+            margin-bottom: 100px;
+
+            .contact {
+                width: 30%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                h6:hover {
+                    cursor: pointer;
+                    color: $colorYellow;
+                    transition: 150ms;
+                }
+
+                .media-sosial {
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    cursor: pointer;
+                    color: white;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .information {
+                width: 20%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                h6:hover {
+                    cursor: pointer;
+                    color: $colorYellow;
+                    transition: 150ms;
+                }
+            }
+
+            .navigation {
+                width: 20%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                h6:hover {
+                    cursor: pointer;
+                    color: $colorYellow;
+                    transition: 150ms;
+                }
+            }
+
+            .photo {
+                width: 30%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+
+                .image {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    img {
+                        width: 49%;
+                        margin-bottom: 2%;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba($colorGray, 0.1);
+        }
+    }
+}
 
 // Halaman Login
 .login-page {
@@ -603,91 +820,6 @@ body {
 
 // Home Page
 .home-page {
-    .nav-desktop {
-        color: white;
-    
-        .content {
-
-            .menu {
-                color: white;
-    
-                ul {
-    
-                    a {
-                        color: inherit;
-    
-                        hr {
-                            color: $colorYellow;
-                            border: 1px solid $colorYellow;
-                        }
-                    }
-    
-    
-                }
-            }
-    
-            .icon {
-    
-                .icon-profile {
-    
-                    i {
-                        color: $colorYellow;
-                    }
-                }
-    
-                .icon-profile:hover {
-                    color: $colorYellow;
-                }
-    
-                .icon-profile.active {
-                    color: $colorYellow;
-                }
-            }
-        }
-    }
-
-    .nav-desktop.active {
-        color: $colorDark;
-    
-        .content {
-
-            .menu {
-                color: $colorDark;
-    
-                ul {
-    
-                    a {
-                        color: inherit;
-    
-                        hr {
-                            color: $colorYellow;
-                            border: 1px solid $colorYellow;
-                        }
-                    }
-    
-    
-                }
-            }
-    
-            .icon {
-    
-                .icon-profile {
-    
-                    i {
-                        color: $colorYellow;
-                    }
-                }
-    
-                .icon-profile:hover {
-                    color: $colorYellow;
-                }
-    
-                .icon-profile.active {
-                    color: $colorYellow;
-                }
-            }
-        }
-    }
 
     .bg-main {
         position: absolute;
@@ -835,6 +967,144 @@ body {
     .why-use {
         width: 100%;
         height: 1000px;
+    }
+}
+
+// About Page
+.about-page {
+    .bg-main {
+        position: absolute;
+        background-color: $colorDark;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 450px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .main {
+        width: 100%;
+        height: 450px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        z-index: 2;
+        position: relative;
+        padding-top: 80px;
+
+        .content {
+            width: 90%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 42px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: $colorYellow;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                width: 500px;
+            }
+        }
+    }
+
+    .bg-bannerAbout {
+        position: relative;
+        background-image: url('../images/bg-bannerAbout.jpg');
+        background-size: 100%;
+        background-position: center;
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+        height: 450px;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .story {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-top: 80px;
+
+        .content {
+            width: 90%;
+
+            .item {
+                display: flex;
+                margin-bottom: 50px;
+
+                .item-title {
+                    width: 25%;
+                    box-sizing: border-box;
+                    padding-right: 10px;
+
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                .item-content {
+                    width: 75%;
+                    box-sizing: border-box;
+                    padding-left: 10px;
+
+                    p {
+                        line-height: 28px;
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            .item-image {
+                
+                .item-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+
+                    .card {
+                        width: 270px;
+                        height: 300px;
+                        background-color: white;
+                        margin-right: 30px;
+
+                        .card-image {
+                            width: 100%;
+                            height: 200px;
+                            background-size: 300px;
+                            background-position: center;
+                        }
+
+                        .card-text {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100px;
+
+                            h4 {
+                                margin-bottom: 15px;
+                                font-weight: 600;
+                            }
+
+                            h5 {
+                                color: $colorGray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
