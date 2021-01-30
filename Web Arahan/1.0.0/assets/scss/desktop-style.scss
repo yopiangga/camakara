@@ -1651,6 +1651,321 @@ body {
     }
 }
 
+// Testimonial Page
+.testimonial-page {
+
+    .bg-main {
+        position: absolute;
+        background-color: $colorDark;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 550px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .main {
+        width: 100%;
+        height: 550px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        z-index: 2;
+        position: relative;
+
+        .content {
+            width: 90%;
+            color: white;
+            display: flex;
+
+            .content-left {
+                width: 50%;
+                box-sizing: border-box;
+                padding-right: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+
+                h1 {
+                    font-size: 36px;
+                    line-height: 44px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    color: $colorYellow;
+                }
+
+                p {
+                    line-height: 28px;
+                    margin-bottom: 30px;
+                }
+
+                .circle {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 100%;
+                    box-shadow: 0px 20px 30px rgba($color: $colorDark, $alpha: 0.5);
+                    background-color: white;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    i {
+                        color: $colorDark;
+                        font-size: 16px;
+                    }
+                }
+
+            }
+
+            .content-right {
+                width: 50%;
+                display: flex;
+                align-items: flex-start;
+                position: relative;
+
+                .card-group {
+                    position: absolute;
+                    left: 180px;
+
+                    .card {
+                        margin-top: 120px;
+                        width: 350px;
+                        position: absolute;
+                        background-color: transparent;
+                        border-radius: 10px;
+                    }
+    
+                    .card-1 {
+                        height: 450px;
+                        left: 0px;
+                        z-index: 3;
+                        box-sizing: border-box;
+                        padding: 20px;
+                        color: white;
+
+                        h2 {
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 22px;
+                            margin-top: 10px;
+                            margin-bottom: 30px;
+                        }
+
+                        form {
+
+                            .form-group {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 20px;
+                                
+                                label {
+                                    font-weight: 400;
+                                    margin-bottom: 10px;
+                                }
+                                
+                                input {
+                                    color: white;
+                                    padding: 10px 20px 10px 20px;
+                                    border: 1px solid white;
+                                    background-color: transparent;
+                                    border-radius: 10px;
+                                }
+                                
+                                textarea {
+                                    color: white;
+                                    padding: 10px 20px 10px 20px;
+                                    border: 1px solid white;
+                                    background-color: transparent;
+                                    border-radius: 10px;
+                                }
+                            }
+                            
+                            .btn-sendTestimoni {
+                                padding: 12px 20px 12px 20px;
+                                width: 100%;
+                                background-color: $colorYellow;
+                                border: 2px solid $colorYellow;
+                                border-radius: 10px;
+                                box-shadow: 0px 15px 45px rgba($color: $colorYellow, $alpha: 0.24);
+                                font-weight: 600;
+                                font-size: 16px;
+                                color: white;
+                                position: relative;
+                                top: 0;
+                                transition: 100ms;
+                                cursor: pointer;
+                            }
+
+                            .btn-sendTestimoni:hover {
+                                top: 8px;
+                                background-color: transparent;
+                                border: 2px solid $colorYellow;
+                                color: $colorYellow;
+                                box-shadow: 0px 30px 60px rgba($color: $colorYellow, $alpha: 0);
+
+                            }
+                        }
+                    }
+                    .card-2 {
+                        height: 340px;
+                        top: 30px;
+                        left: 30px;
+                        z-index: 2;
+                        display: none;
+                    }
+                    .card-3 {
+                        display: none;
+                        height: 280px;
+                        top: 60px;
+                        left: 60px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial-section {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+
+        .content {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+
+            .content-title {
+                text-align: center;
+                margin-bottom: 150px;
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+            }
+
+            .content-body {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .circle {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: white;
+                    box-shadow: 0px 15px 45px rgba($color: $colorDark, $alpha: 0.16);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    top: 0px;
+                    transition: 100ms;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 24px;
+                    }
+                }
+                
+                .circle:hover {
+                    color: $colorYellow;
+                    position: relative;
+                    top: 10px;
+                    box-shadow: 0px 0px 0px rgba($color: #000000, $alpha: 0.0);
+                }
+
+                .card-group {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+    
+                    .card {
+                        background-color: white;
+                        width: 250px;
+                        height: 280px;
+                        box-shadow: 0px 30px 60px rgba($color: $colorDark, $alpha: 0.08);
+                        border-radius: 20px;
+                        box-sizing: border-box;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+
+                        .circle-image {
+                            position: absolute;
+                            top: -40px;
+                            border-radius: 100%;
+                            width: 80px;
+                            height: 80px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            
+                            img {
+                                height: 80px;
+                            }
+                        }
+
+                        .card-text {
+                            text-align: center;
+
+                            h3 {
+                                font-weight: 600;
+                                font-size: 16px;
+                                margin-top: 70px;
+                                margin-bottom: 20px;
+                            }
+
+                            p {
+                                line-height: 28px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .card.active {
+                        width: 300px;
+                        height: 330px;
+                        box-shadow: 0px 30px 60px rgba($color: $colorDark, $alpha: 0.24);
+
+                        .circle-image {
+                            height: 100px;
+                            width: 100px;
+                            top: -50px;
+                            box-shadow: 0px 15px 45px rgba($color: $colorDark, $alpha: 0.32);
+                            
+                            img {
+                                height: 100px;
+                            }
+                        }
+
+                        .card-text {
+                            h3 {
+                                font-size: 18px;
+                            }
+
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 // Halaman Beli Tryout Detail
 
