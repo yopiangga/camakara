@@ -839,6 +839,7 @@ body {
         box-sizing: border-box;
         z-index: 2;
         position: relative;
+        margin-bottom: 80px;
 
         .content {
             width: 90%;
@@ -966,7 +967,614 @@ body {
 
     .why-use {
         width: 100%;
-        height: 1000px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+        margin-bottom: 50px;
+
+        .content{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .content-head {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 25px 45px rgba($color: $colorDark, $alpha: 0.4);
+                    background-color: $colorDark;
+                    margin-bottom: 30px;
+
+                    i {
+                        font-size: 28px;
+                        color: $colorYellow;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+
+                .deskripsi {
+
+                    p {
+                        line-height: 28px;
+                        width: 900px;
+                    }
+                }
+            }
+
+            .content-body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 75%;
+
+                .card {
+                    width: 380px;
+                    height: 150px;
+                    box-shadow: 0px 20px 60px rgba($color: $colorDark, $alpha: 0.12);
+                    display: flex;
+                    border-radius: 20px;
+                    margin-bottom: 30px;
+                    
+                    .card-image {
+                        width: 25%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            font-size: 36px;
+                            color: $colorYellow;
+                        }
+                    }
+                    
+                    .card-text {
+                        width: 75%;
+                        box-sizing: border-box;
+                        padding: 20px 20px 20px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        h3 {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 28px;
+                            margin-bottom: 5px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .you-get {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+        margin-bottom: 50px;
+
+        .content {
+            width: 90%;
+            display: flex;
+
+            .content-left {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                width: 50%;
+
+                .column {
+                    
+                    .card {
+                        width: 250px;
+                        height: 300px;
+                        box-shadow: 0px 20px 60px rgba($color: $colorDark, $alpha: 0.12);
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 20px;
+                        margin-bottom: 30px;
+                        padding: 25px;
+                        box-sizing: border-box;
+                        
+                        .card-image {
+                            height: 25%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+    
+                            i {
+                                font-size: 36px;
+                                color: $colorYellow;
+                            }
+                        }
+                        
+                        .card-text {
+                            height: 75%;
+                            box-sizing: border-box;
+                            display: flex;
+                            flex-direction: column;
+    
+                            h3 {
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 28px;
+                                margin-bottom: 5px;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-right {
+                width: 50%;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 50px;
+                box-sizing: border-box;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 25px 45px rgba($color: $colorDark, $alpha: 0.4);
+                    background-color: $colorDark;
+                    margin-bottom: 30px;
+
+                    i {
+                        font-size: 28px;
+                        color: $colorYellow;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+
+                .deskripsi {
+                    margin-bottom: 30px;
+
+                    p {
+                        line-height: 28px;
+                        width: 500px;
+                    }
+                }
+
+                .btn-action {
+                    padding: 12px 20px 12px 20px;
+                    background-color: white;
+                    border: 1px solid $colorYellow;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    color: $colorYellow;
+                    cursor: pointer;
+                    font-weight: 600;
+                    width: 150px;
+                }
+
+                .btn-action:hover {
+                    background-color: $colorYellow;
+                    border: 1px solid $colorYellow;
+                    color: white;
+                    cursor: pointer;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+
+    .beranda-testimoni {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+        margin-bottom: 50px;
+
+        .content {
+            width: 90%;
+            display: flex;
+
+            .content-left {
+                width: 50%;
+
+                .items {
+                    position: relative;
+                    height: 500px;
+
+                    .circle {
+                        position: absolute;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+    
+                    .circle-1 {
+                        width: 60px;
+                        height: 60px;
+                        left: 10%;
+                        top: 50%;
+                        
+                        img {
+                            height: 60px;
+                        }
+                    }
+
+                    .circle-2 {
+                        width: 80px;
+                        height: 80px;
+                        left: 20%;
+                        top: 25%;
+                        
+                        img {
+                            height: 80px;
+                        }
+                    }
+
+                    .circle-3 {
+                        width: 40px;
+                        height: 40px;
+                        left: 20%;
+                        top: 75%;
+                        
+                        img {
+                            height: 40px;
+                        }
+                    }
+
+                    .circle-4 {
+                        width: 60px;
+                        height: 60px;
+                        left: 50%;
+                        top: 10%;
+                        
+                        img {
+                            height: 60px;
+                        }
+                    }
+
+                    .circle-5 {
+                        width: 80px;
+                        height: 80px;
+                        left: 45%;
+                        top: 55%;
+                        
+                        img {
+                            height: 80px;
+                        }
+                    }
+
+                    .circle-6 {
+                        width: 60px;
+                        height: 60px;
+                        left: 75%;
+                        top: 25%;
+                        
+                        img {
+                            height: 60px;
+                        }
+                    }
+
+                    .circle-7 {
+                        width: 60px;
+                        height: 60px;
+                        left: 70%;
+                        top: 75%;
+                        
+                        img {
+                            height: 60px;
+                        }
+                    }
+
+                    .circle-8 {
+                        width: 80px;
+                        height: 80px;
+                        left: 85%;
+                        top: 50%;
+                        
+                        img {
+                            height: 80px;
+                        }
+                    }
+
+                    .card {
+                        position: absolute;
+                        z-index: 1;
+                        width: 350px;
+                        height: 120px;
+                        background-color: white;
+                        border-radius: 15px;
+                        box-shadow: 0px 25px 45px rgba($color: $colorDark, $alpha: 0.32);
+                        box-sizing: border-box;
+                        padding: 20px;
+                        right: 12%;
+                        top: 32%;
+
+                        h3 {
+                            font-weight: 600;
+                            line-height: 28px;
+                            margin-bottom: 5px;
+                        }
+
+                        p {
+                            line-height: 21px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .content-right {
+                width: 50%;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 50px;
+                box-sizing: border-box;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 25px 45px rgba($color: $colorDark, $alpha: 0.4);
+                    background-color: $colorDark;
+                    margin-bottom: 30px;
+
+                    i {
+                        font-size: 28px;
+                        color: $colorYellow;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+
+                .deskripsi {
+                    margin-bottom: 30px;
+
+                    p {
+                        line-height: 28px;
+                        width: 500px;
+                    }
+                }
+
+                .btn-action {
+                    padding: 12px 20px 12px 20px;
+                    background-color: white;
+                    border: 1px solid $colorYellow;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    color: $colorYellow;
+                    cursor: pointer;
+                    font-weight: 600;
+                    width: 150px;
+                }
+
+                .btn-action:hover {
+                    background-color: $colorYellow;
+                    border: 1px solid $colorYellow;
+                    color: white;
+                    cursor: pointer;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+
+    .beranda-contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+        margin-bottom: 50px;
+
+        .content {
+            width: 90%;
+            display: flex;
+
+            .content-left {
+                width: 50%;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                box-sizing: border-box;
+                padding-left: 75px;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 25px 45px rgba($color: $colorDark, $alpha: 0.4);
+                    background-color: $colorDark;
+                    margin-bottom: 30px;
+
+                    i {
+                        font-size: 28px;
+                        color: $colorYellow;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+
+                .deskripsi {
+                    margin-bottom: 30px;
+
+                    p {
+                        line-height: 28px;
+                        width: 500px;
+                    }
+                }
+
+                form {
+
+                    input {
+                        color: white;
+                        padding: 10px 20px 10px 20px;
+                        border: 1px solid $colorGray;
+                        background-color: transparent;
+                        border-radius: 20px;
+                        width: 300px;
+                    }
+
+                    .btn-action {
+                        padding: 12px 20px 12px 20px;
+                        background-color: white;
+                        border: 1px solid $colorYellow;
+                        border-radius: 20px;
+                        font-weight: 600;
+                        color: $colorYellow;
+                        cursor: pointer;
+                        font-weight: 600;
+                        width: 150px;
+                    }
+    
+                    .btn-action:hover {
+                        background-color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                        color: white;
+                        cursor: pointer;
+                        transition: 300ms;
+                    }
+                }
+            }
+
+            .content-right {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+
+                form {
+                    width: 350px;
+                    padding: 50px 40px 50px 40px;
+                    box-shadow: 0px 20px 60px rgba($color: $colorDark, $alpha: 0.16);
+                    border-radius: 20px;
+
+                    h2 {
+                        font-weight: 600;
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                    }
+
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        
+                        label {
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                        }
+                        
+                        input {
+                            color: $colorDark;
+                            padding: 10px 20px 10px 20px;
+                            border: 1px solid $colorGray;
+                            background-color: transparent;
+                            border-radius: 10px;
+                        }
+                        
+                        textarea {
+                            color: white;
+                            padding: 10px 20px 10px 20px;
+                            border: 1px solid $colorGray;
+                            background-color: transparent;
+                            border-radius: 10px;
+                        }
+                    }
+                    
+                    .btn-sendTestimoni {
+                        padding: 12px 20px 12px 20px;
+                        width: 100%;
+                        background-color: $colorYellow;
+                        border: 1px solid $colorYellow;
+                        border-radius: 10px;
+                        box-shadow: 0px 15px 45px rgba($color: $colorYellow, $alpha: 0.24);
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: white;
+                        position: relative;
+                        top: 0;
+                        transition: 100ms;
+                        cursor: pointer;
+                    }
+
+                    .btn-sendTestimoni:hover {
+                        top: 8px;
+                        background-color: transparent;
+                        border: 1px solid $colorYellow;
+                        color: $colorYellow;
+                        box-shadow: 0px 30px 60px rgba($color: $colorYellow, $alpha: 0);
+
+                    }
+                }
+            }
+        }
     }
 }
 

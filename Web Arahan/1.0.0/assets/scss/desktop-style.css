@@ -913,6 +913,7 @@ body textarea:focus {
           box-sizing: border-box;
   z-index: 2;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .home-page .main .content {
@@ -1064,7 +1065,768 @@ body textarea:focus {
 
 .home-page .why-use {
   width: 100%;
-  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.home-page .why-use .content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page .why-use .content .content-head {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.home-page .why-use .content .content-head .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+          box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+  background-color: #393939;
+  margin-bottom: 30px;
+}
+
+.home-page .why-use .content .content-head .icon i {
+  font-size: 28px;
+  color: #FDBF1F;
+}
+
+.home-page .why-use .content .content-head .title {
+  margin-bottom: 20px;
+}
+
+.home-page .why-use .content .content-head .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home-page .why-use .content .content-head .deskripsi p {
+  line-height: 28px;
+  width: 900px;
+}
+
+.home-page .why-use .content .content-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+}
+
+.home-page .why-use .content .content-body .card {
+  width: 380px;
+  height: 150px;
+  -webkit-box-shadow: 0px 20px 60px rgba(57, 57, 57, 0.12);
+          box-shadow: 0px 20px 60px rgba(57, 57, 57, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.home-page .why-use .content .content-body .card .card-image {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page .why-use .content .content-body .card .card-image i {
+  font-size: 36px;
+  color: #FDBF1F;
+}
+
+.home-page .why-use .content .content-body .card .card-text {
+  width: 75%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 20px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-page .why-use .content .content-body .card .card-text h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.home-page .why-use .content .content-body .card .card-text p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.home-page .you-get {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.home-page .you-get .content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .you-get .content .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.home-page .you-get .content .content-left .column .card {
+  width: 250px;
+  height: 300px;
+  -webkit-box-shadow: 0px 20px 60px rgba(57, 57, 57, 0.12);
+          box-shadow: 0px 20px 60px rgba(57, 57, 57, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-page .you-get .content .content-left .column .card .card-image {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page .you-get .content .content-left .column .card .card-image i {
+  font-size: 36px;
+  color: #FDBF1F;
+}
+
+.home-page .you-get .content .content-left .column .card .card-text {
+  height: 75%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page .you-get .content .content-left .column .card .card-text h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.home-page .you-get .content .content-left .column .card .card-text p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.home-page .you-get .content .content-right {
+  width: 50%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-page .you-get .content .content-right .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+          box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+  background-color: #393939;
+  margin-bottom: 30px;
+}
+
+.home-page .you-get .content .content-right .icon i {
+  font-size: 28px;
+  color: #FDBF1F;
+}
+
+.home-page .you-get .content .content-right .title {
+  margin-bottom: 20px;
+}
+
+.home-page .you-get .content .content-right .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home-page .you-get .content .content-right .deskripsi {
+  margin-bottom: 30px;
+}
+
+.home-page .you-get .content .content-right .deskripsi p {
+  line-height: 28px;
+  width: 500px;
+}
+
+.home-page .you-get .content .content-right .btn-action {
+  padding: 12px 20px 12px 20px;
+  background-color: white;
+  border: 1px solid #FDBF1F;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #FDBF1F;
+  cursor: pointer;
+  font-weight: 600;
+  width: 150px;
+}
+
+.home-page .you-get .content .content-right .btn-action:hover {
+  background-color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.home-page .beranda-testimoni {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.home-page .beranda-testimoni .content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .beranda-testimoni .content .content-left {
+  width: 50%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items {
+  position: relative;
+  height: 500px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle {
+  position: absolute;
+  border-radius: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-1 {
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  top: 50%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-1 img {
+  height: 60px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-2 {
+  width: 80px;
+  height: 80px;
+  left: 20%;
+  top: 25%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-2 img {
+  height: 80px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-3 {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+  top: 75%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-3 img {
+  height: 40px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-4 {
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  top: 10%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-4 img {
+  height: 60px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-5 {
+  width: 80px;
+  height: 80px;
+  left: 45%;
+  top: 55%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-5 img {
+  height: 80px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-6 {
+  width: 60px;
+  height: 60px;
+  left: 75%;
+  top: 25%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-6 img {
+  height: 60px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-7 {
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  top: 75%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-7 img {
+  height: 60px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-8 {
+  width: 80px;
+  height: 80px;
+  left: 85%;
+  top: 50%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .circle-8 img {
+  height: 80px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .card {
+  position: absolute;
+  z-index: 1;
+  width: 350px;
+  height: 120px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.32);
+          box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.32);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  right: 12%;
+  top: 32%;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .card h3 {
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.home-page .beranda-testimoni .content .content-left .items .card p {
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.home-page .beranda-testimoni .content .content-right {
+  width: 50%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-page .beranda-testimoni .content .content-right .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+          box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+  background-color: #393939;
+  margin-bottom: 30px;
+}
+
+.home-page .beranda-testimoni .content .content-right .icon i {
+  font-size: 28px;
+  color: #FDBF1F;
+}
+
+.home-page .beranda-testimoni .content .content-right .title {
+  margin-bottom: 20px;
+}
+
+.home-page .beranda-testimoni .content .content-right .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home-page .beranda-testimoni .content .content-right .deskripsi {
+  margin-bottom: 30px;
+}
+
+.home-page .beranda-testimoni .content .content-right .deskripsi p {
+  line-height: 28px;
+  width: 500px;
+}
+
+.home-page .beranda-testimoni .content .content-right .btn-action {
+  padding: 12px 20px 12px 20px;
+  background-color: white;
+  border: 1px solid #FDBF1F;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #FDBF1F;
+  cursor: pointer;
+  font-weight: 600;
+  width: 150px;
+}
+
+.home-page .beranda-testimoni .content .content-right .btn-action:hover {
+  background-color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.home-page .beranda-contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.home-page .beranda-contact .content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .beranda-contact .content .content-left {
+  width: 50%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 75px;
+}
+
+.home-page .beranda-contact .content .content-left .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+          box-shadow: 0px 25px 45px rgba(57, 57, 57, 0.4);
+  background-color: #393939;
+  margin-bottom: 30px;
+}
+
+.home-page .beranda-contact .content .content-left .icon i {
+  font-size: 28px;
+  color: #FDBF1F;
+}
+
+.home-page .beranda-contact .content .content-left .title {
+  margin-bottom: 20px;
+}
+
+.home-page .beranda-contact .content .content-left .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home-page .beranda-contact .content .content-left .deskripsi {
+  margin-bottom: 30px;
+}
+
+.home-page .beranda-contact .content .content-left .deskripsi p {
+  line-height: 28px;
+  width: 500px;
+}
+
+.home-page .beranda-contact .content .content-left form input {
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #C4C4C4;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.home-page .beranda-contact .content .content-left form .btn-action {
+  padding: 12px 20px 12px 20px;
+  background-color: white;
+  border: 1px solid #FDBF1F;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #FDBF1F;
+  cursor: pointer;
+  font-weight: 600;
+  width: 150px;
+}
+
+.home-page .beranda-contact .content .content-left form .btn-action:hover {
+  background-color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.home-page .beranda-contact .content .content-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-page .beranda-contact .content .content-right form {
+  width: 350px;
+  padding: 50px 40px 50px 40px;
+  -webkit-box-shadow: 0px 20px 60px rgba(57, 57, 57, 0.16);
+          box-shadow: 0px 20px 60px rgba(57, 57, 57, 0.16);
+  border-radius: 20px;
+}
+
+.home-page .beranda-contact .content .content-right form h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.home-page .beranda-contact .content .content-right form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.home-page .beranda-contact .content .content-right form .form-group label {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.home-page .beranda-contact .content .content-right form .form-group input {
+  color: #393939;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #C4C4C4;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.home-page .beranda-contact .content .content-right form .form-group textarea {
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #C4C4C4;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.home-page .beranda-contact .content .content-right form .btn-sendTestimoni {
+  padding: 12px 20px 12px 20px;
+  width: 100%;
+  background-color: #FDBF1F;
+  border: 1px solid #FDBF1F;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 15px 45px rgba(253, 191, 31, 0.24);
+          box-shadow: 0px 15px 45px rgba(253, 191, 31, 0.24);
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  top: 0;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.home-page .beranda-contact .content .content-right form .btn-sendTestimoni:hover {
+  top: 8px;
+  background-color: transparent;
+  border: 1px solid #FDBF1F;
+  color: #FDBF1F;
+  -webkit-box-shadow: 0px 30px 60px rgba(253, 191, 31, 0);
+          box-shadow: 0px 30px 60px rgba(253, 191, 31, 0);
 }
 
 .about-page .bg-main {
