@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="assets/css/css-reset.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/scss/desktop-style.css">
+    <link rel="stylesheet" href="assets/scss/mobile-style.css">
 
     <title>Camakara Try Out UTBK</title>
 </head>
 <body class="home-page nav-dark">
     
-    <nav class="nav-desktop">
+    <nav class="nav-desktop" id="desktop">
         <div class="content">
             <div class="logo">
                 <img src="assets/images/logo-1.png" alt="">
@@ -34,6 +35,29 @@
         </div>
     </nav>
 
+    <nav class="nav-mobile" id="mobile">
+        <div class="content">
+            <div class="btn-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="icon">
+                <div class="icon-profile" onclick="window.location.href='profile.html'">
+                    <i class="fas fa-user"></i>
+                    <h4>My Profile</h4>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu" id="mobile">
+        <ul>
+            <a href="beranda.html" class="active"><li>Beranda</li><hr></a>
+            <a href="about.html"><li>Tentang Camakara</li><hr></a>
+            <a href="product.html"><li>Produk</li><hr></a>
+            <a href="testimonial.html"><li>Testimonial</li><hr></a>
+        </ul>
+    </div>
+
     <section class="bg-main"></section>
 
     <section class="main">
@@ -53,7 +77,11 @@
             </div>
             <div class="content-right">
                 <div class="card-group">
-                    <div class="card card-1"></div>
+                    <div class="card card-1">
+                        <h3>Pusat Bantuan</h3>
+                        <img src="assets/images/help-center.png" alt="">
+                        <p>Ceritakan masalah anda pada <span>Kak Nabila</span> pusat bantuan cepat untuk masalah anda. WhatsApp <a>0823 30410865</a></p>
+                    </div>
                     <div class="card card-2"></div>
                     <div class="card card-3"></div>
                 </div>
@@ -248,7 +276,7 @@
                         <label for="">Pesan</label>
                         <textarea type="text" rows="5" placeholder="Pesan"></textarea>
                     </div>
-                    <button class="btn-sendTestimoni">Kirimkan</button>
+                    <button class="btn-sendPesan">Kirimkan</button>
                 </form>
             </div>
         </div>

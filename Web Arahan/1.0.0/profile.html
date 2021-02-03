@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="assets/css/css-reset.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/scss/desktop-style.css">
+    <link rel="stylesheet" href="assets/scss/mobile-style.css">
 
     <title>Profile Saya | Camakara Try Out UTBK</title>
 </head>
 <body class="profile-page">
     
-    <nav class="nav-desktop">
+    <nav class="nav-desktop" id="desktop">
         <div class="content">
             <div class="logo">
                 <img src="assets/images/logo-1.png" alt="">
@@ -22,7 +23,7 @@
                     <a href="beranda.html"><li>Beranda</li><hr></a>
                     <a href="about.html"><li>Tentang Camakara</li><hr></a>
                     <a href="product.html"><li>Produk</li><hr></a>
-                    <a href=""><li>Testimonial</li><hr></a>
+                    <a href="testimonial.html"><li>Testimonial</li><hr></a>
                 </ul>
             </div>
             <div class="icon">
@@ -33,6 +34,29 @@
             </div>
         </div>
     </nav>
+
+    <nav class="nav-mobile" id="mobile">
+        <div class="content">
+            <div class="btn-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="icon">
+                <div class="icon-profile active" onclick="window.location.href='profile.html'">
+                    <i class="fas fa-user"></i>
+                    <h4>My Profile</h4>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu" id="mobile">
+        <ul>
+            <a href="beranda.html"><li>Beranda</li><hr></a>
+            <a href="about.html"><li>Tentang Camakara</li><hr></a>
+            <a href="product.html"><li>Produk</li><hr></a>
+            <a href="testimonial.html"><li>Testimonial</li><hr></a>
+        </ul>
+    </div>
 
     <section class="main">
         <div class="content">

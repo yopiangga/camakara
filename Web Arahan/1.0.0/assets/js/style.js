@@ -19,8 +19,14 @@ $(window).scroll(function(){
 
     if(scroll > 50){
         $(".nav-desktop").addClass("active");
+        $(".nav-mobile").addClass("active");
     } else {
         $(".nav-desktop").removeClass("active");
+        $(".nav-mobile").removeClass("active");
     }
-	
+    
 })
+
+$('.nav-mobile .content .btn-menu i').click(function(){
+    $('.menu#mobile').toggleClass('active');
+});
