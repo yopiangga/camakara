@@ -2081,18 +2081,19 @@
                 align-items: center;
 
                 .card {
-                    width: 290px;
-                    height: 150px;
+                    width: 100%;
+                    height: 250px;
                     background-color: white;
                     box-shadow: 0px 0px 62px rgba($color: $colorDark, $alpha: 0.08);
                     border-radius: 30px;
                     display: flex;
                     padding: 15px 20px 15px 0px;
                     box-sizing: border-box;
-                    margin-bottom: 30px;
+                    justify-content: center;
+                    align-items: center;
 
-                    .image {
-                        width: 30%;
+                    img {
+                        height: 250px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -2103,59 +2104,6 @@
                         }
                     }
 
-                    .text {
-                        width: 70%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-
-                        h3 {
-                            font-size: 18px;
-                            font-weight: 600;
-                            margin-top: 5px;
-                        }
-
-                        p {
-                            font-size: 14px;
-                            line-height: 21px;
-                        }
-
-                        .btn-card {
-                            padding: 8px 20px 8px 20px;
-                            background-color: white;
-                            border: 1px solid $colorYellow;
-                            border-radius: 15px;
-                            font-weight: 600;
-                            color: $colorYellow;
-                            cursor: pointer;
-                            font-weight: 600;
-                            width: 100px;
-                            margin-left: auto;
-                        }
-
-                        .btn-card:hover {
-                            padding: 8px 20px 8px 20px;
-                            background-color: $colorYellow;
-                            border: 1px solid $colorYellow;
-                            border-radius: 15px;
-                            font-weight: 600;
-                            color: white;
-                            cursor: pointer;
-                            transition: 300ms;
-                        }
-                    }
-                }
-
-                .card:hover {
-                    box-shadow: 0px 0px 62px rgba($color: $colorDark, $alpha: 0.16);
-                    transition: 300ms;
-
-                    .image {
-                        i {
-                            transition: 100ms;
-                            color: $colorYellow;
-                        }
-                    }
                 }
             }
         }
