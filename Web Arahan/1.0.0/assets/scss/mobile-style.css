@@ -433,7 +433,7 @@
   }
   .login-page .main .content .card {
     width: 400px;
-    height: 530px;
+    height: 550px;
     border-radius: 30px;
     background-color: white;
     -webkit-box-sizing: border-box;
@@ -2288,7 +2288,7 @@
     padding-bottom: 5px;
   }
   .product-page .cari-tryout .content .content-heading .search {
-    width: 25%;
+    width: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2303,8 +2303,15 @@
     border: none;
     border-bottom: 1px solid #C4C4C4;
     padding: 5px 15px 5px 15px;
-    width: 60%;
+    width: 50%;
     margin-top: 12px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .product-page .cari-tryout .content .content-heading .search input:focus {
+    width: 90%;
+    -webkit-transition: 300ms;
+    transition: 300ms;
   }
   .product-page .cari-tryout .content .content-heading .navigation {
     display: -webkit-box;
@@ -2358,7 +2365,7 @@
     display: block;
   }
   .product-page .cari-tryout .content .content-heading .filter {
-    width: 25%;
+    width: 35%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2850,12 +2857,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .beli-tryout-detail .info-detail-tryout .content .content-left {
-    width: 50%;
+    width: 100%;
   }
   .beli-tryout-detail .info-detail-tryout .content .content-left .nama-tryout {
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2898,6 +2909,9 @@
     display: flex;
     width: 100%;
     margin-bottom: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .beli-tryout-detail .info-detail-tryout .content .content-left .widget .widget-child {
     display: -webkit-box;
@@ -2910,8 +2924,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 30px;
-    width: 120px;
+    width: 33%;
     text-align: center;
     line-height: 21px;
   }
@@ -2938,9 +2951,9 @@
     line-height: 28px;
   }
   .beli-tryout-detail .info-detail-tryout .content .content-right {
-    padding-left: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    width: 100%;
   }
   .beli-tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan {
     margin-top: 50px;
@@ -3006,15 +3019,12 @@
     font-size: 16px;
     color: #393939;
     cursor: pointer;
+    width: 100%;
   }
   .beli-tryout-detail .info-detail-tryout .content .content-right .beli-tryout .btn-beli-tryout:hover {
-    padding: 12px 25px 12px 25px;
     background-color: white;
     border: 1px solid #FDBF1F;
-    border-radius: 5px;
-    font-weight: 600;
     color: #FDBF1F;
-    cursor: pointer;
     -webkit-box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
             box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
     -webkit-transition: 300ms;
@@ -3151,26 +3161,46 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .riwayatPembelian-page .main .content .content-head h2 {
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .riwayatPembelian-page .main .content .content-head .filter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .riwayatPembelian-page .main .content .content-head .filter select {
-    padding: 8px 20px 8px 20px;
+    padding: 8px 15px 8px 15px;
     border-radius: 5px;
     color: #393939;
     border: 1px solid #FDBF1F;
+  }
+  .riwayatPembelian-page .main .content .content-head .filter .filter-status {
+    width: 59%;
+  }
+  .riwayatPembelian-page .main .content .content-head .filter .filter-jenis {
+    width: 39%;
   }
   .riwayatPembelian-page .main .content .content-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -3193,7 +3223,6 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: auto;
     margin-bottom: 30px;
   }
   .riwayatPembelian-page .main .content .content-body .card .card-body {

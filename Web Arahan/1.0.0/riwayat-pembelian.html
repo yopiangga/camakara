@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="assets/css/css-reset.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/scss/desktop-style.css">
+    <link rel="stylesheet" href="assets/scss/mobile-style.css">
+    <link rel="stylesheet" href="assets/scss/mobileLandscape-style.css">
 
     <title>Camakara Try Out UTBK</title>
 </head>
 <body class="riwayatPembelian-page">
     
-    <nav class="nav-desktop">
+    <nav class="nav-desktop" id="desktop">
         <div class="content">
             <div class="logo">
                 <img src="assets/images/logo-1.png" alt="">
@@ -34,12 +36,35 @@
         </div>
     </nav>
 
+    <nav class="nav-mobile" id="mobile">
+        <div class="content">
+            <div class="btn-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="icon">
+                <div class="icon-profile active" onclick="window.location.href='profile.html'">
+                    <i class="fas fa-user"></i>
+                    <h4>My Profile</h4>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu" id="mobile">
+        <ul>
+            <a href="beranda.html"><li>Beranda</li><hr></a>
+            <a href="about.html"><li>Tentang Camakara</li><hr></a>
+            <a href="product.html"><li>Produk</li><hr></a>
+            <a href="testimonial.html"><li>Testimonial</li><hr></a>
+        </ul>
+    </div>
+
     <section class="main">
         <div class="content">
             <div class="content-head">
                 <h2>Riwayat Pembayaran</h2>
                 <div class="filter">
-                    <select name="" id="">
+                    <select name="" id="" class="filter-status">
                         <option>Status Pembayaran</option>
                         <option value="Semua">Semua</option>
                         <option value="menunggu">Menunggu Konfirmasi</option>
@@ -47,7 +72,7 @@
                         <option value="gagal">Gagal</option>
                         <option value="dibatalkan">Dibatalkan</option>
                     </select>
-                    <select name="" id="">
+                    <select name="" id="" class="filter-jenis">
                         <option>Jenis Tryout</option>
                         <option value="utbk">Tryout UTBK</option>
                         <option value="bebas">Tryout Bebas</option>

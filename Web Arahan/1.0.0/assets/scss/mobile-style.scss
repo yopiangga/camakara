@@ -483,7 +483,7 @@
 
                 .card {
                     width: 400px;
-                    height: 530px;
+                    height: 550px;
                     border-radius: 30px;
                     background-color: white;
                     box-sizing: border-box;
@@ -2188,7 +2188,7 @@
                     padding-bottom: 5px;
 
                     .search {
-                        width: 25%;
+                        width: 65%;
                         display: flex;
                         align-items: center;
 
@@ -2200,8 +2200,14 @@
                             border: none;
                             border-bottom: 1px solid $colorGray;
                             padding: 5px 15px 5px 15px;
-                            width: 60%;
+                            width: 50%;
                             margin-top: 12px;
+                            transition: 300ms;
+                        }
+
+                        input:focus {
+                            width: 90%;
+                            transition: 300ms;
                         }
                     }
 
@@ -2253,7 +2259,7 @@
                     }
 
                     .filter {
-                        width: 25%;
+                        width: 35%;
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
@@ -2713,12 +2719,13 @@
             .content {
                 width: 90%;
                 display: flex;
+                flex-direction: column;
 
                 .content-left {
-                    width: 50%;
+                    width: 100%;
 
                     .nama-tryout {
-                        margin-top: 50px;
+                        margin-top: 30px;
                         position: relative;
                         display: flex;
                         margin-bottom: 30px;
@@ -2761,13 +2768,13 @@
                         display: flex;
                         width: 100%;
                         margin-bottom: 30px;
+                        justify-content: space-between;
 
                         .widget-child {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            margin-right: 30px;
-                            width: 120px;
+                            width: 33%;
                             text-align: center;
                             line-height: 21px;
 
@@ -2802,8 +2809,8 @@
                 }
 
                 .content-right {
-                    padding-left: 20px;
                     box-sizing: border-box;
+                    width: 100%;
 
                     .tanggal-pengerjaan {
                         margin-top: 50px;
@@ -2868,16 +2875,13 @@
                             font-size: 16px;
                             color: $colorDark;
                             cursor: pointer;
+                            width: 100%;
                         }
 
                         .btn-beli-tryout:hover {
-                            padding: 12px 25px 12px 25px;
                             background-color: white;
                             border: 1px solid $colorYellow;
-                            border-radius: 5px;
-                            font-weight: 600;
                             color: $colorYellow;
-                            cursor: pointer;
                             box-shadow: 0px 60px 100px rgba($color: $colorYellow, $alpha: 0.16);
                             transition: 300ms;
                         }
@@ -3027,28 +3031,42 @@
                 .content-head {
                     display: flex;
                     justify-content: space-between;
-                    margin-top: 50px;
+                    margin-top: 30px;
                     margin-bottom: 50px;
+                    flex-direction: column;
 
                     h2 {
                         font-size: 28px;
                         font-weight: 600;
+                        margin-bottom: 20px;
                     }
 
                     .filter {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
 
                         select {
-                            padding: 8px 20px 8px 20px;
+                            padding: 8px 15px 8px 15px;
                             border-radius: 5px;
                             color: $colorDark;
                             border: 1px solid $colorYellow;
+
+                        }
+
+                        .filter-status {
+                            width: 59%;
+                        }
+
+                        .filter-jenis {
+                            width: 39%;
                         }
                     }
                 }
 
                 .content-body {
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content: center;
                     flex-wrap: wrap;
 
                     .card {
@@ -3061,7 +3079,6 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        margin-right: auto;
                         margin-bottom: 30px;
 
                         .card-body {
