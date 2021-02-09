@@ -2131,7 +2131,7 @@
     padding-bottom: 5px;
   }
   .product-page .cari-tryout .content .content-heading .search {
-    width: 25%;
+    width: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2156,7 +2156,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 50%;
+    width: 60%;
   }
   .product-page .cari-tryout .content .content-heading .navigation ul {
     display: -webkit-box;
@@ -2185,6 +2185,7 @@
             justify-content: center;
     color: inherit;
     position: relative;
+    cursor: pointer;
   }
   .product-page .cari-tryout .content .content-heading .navigation ul a hr {
     position: absolute;
@@ -2201,7 +2202,7 @@
     display: block;
   }
   .product-page .cari-tryout .content .content-heading .filter {
-    width: 25%;
+    width: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2257,8 +2258,21 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-page .card-tryout .content .cardUtbk.unActive {
+    display: none;
+  }
+  .product-page .card-tryout .content .cardBebas.unActive {
+    display: none;
+  }
+  .product-page .card-tryout .content .cardPaket.unActive {
+    display: none;
+  }
+  .product-page .card-tryout .content .cardKuno.unActive {
+    display: none;
   }
   .product-page .card-tryout .content .card {
     min-height: 300px;
@@ -2268,6 +2282,8 @@
     overflow: hidden;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .product-page .card-tryout .content .card .card-image {
     height: 160px;
