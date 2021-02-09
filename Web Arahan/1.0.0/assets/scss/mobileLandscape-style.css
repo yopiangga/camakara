@@ -96,6 +96,25 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .nav-mobile .content .icon .icon-coins {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100px;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 20px;
+  }
+  .nav-mobile .content .icon .icon-coins i {
+    color: #FDBF1F;
+    margin-right: 20px;
+  }
   .nav-mobile .content .icon .icon-profile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -106,17 +125,57 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 110px;
+    width: 100px;
     cursor: pointer;
+    z-index: 999;
   }
-  .nav-mobile .content .icon .icon-profile i {
+  .nav-mobile .content .icon .icon-profile .fa-user {
     color: #FDBF1F;
+  }
+  .nav-mobile .content .icon .icon-profile .fa-chevron-down {
+    color: white;
   }
   .nav-mobile .content .icon .icon-profile:hover {
     color: #FDBF1F;
   }
   .nav-mobile .content .icon .icon-profile.active {
     color: #FDBF1F;
+  }
+  .nav-mobile .content .icon .dropdownProfile {
+    position: fixed;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    display: block;
+    background-color: white;
+    top: 80px;
+    width: 150px;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 30px 30px rgba(57, 57, 57, 0.08);
+            box-shadow: 0px 30px 30px rgba(57, 57, 57, 0.08);
+  }
+  .nav-mobile .content .icon .dropdownProfile ul {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .nav-mobile .content .icon .dropdownProfile ul a {
+    text-decoration: none;
+    text-align: end;
+    color: #393939;
+    font-size: 14px;
+  }
+  .nav-mobile .content .icon .dropdownProfile ul a li {
+    margin-bottom: 20px;
+  }
+  .nav-mobile .content .icon .dropdownProfile ul a:hover {
+    color: #FDBF1F;
+  }
+  .nav-mobile .content .icon .dropdownProfile.active {
+    height: 200px;
+    top: 80px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
   }
   .menu {
     display: none;

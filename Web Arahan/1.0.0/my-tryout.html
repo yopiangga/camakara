@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="assets/scss/mobile-style.css">
     <link rel="stylesheet" href="assets/scss/mobileLandscape-style.css">
 
-    <title>Profile Saya | Camakara Try Out UTBK</title>
+    <title>Camakara Try Out UTBK</title>
 </head>
-<body class="profile-page">
+<body class="myTryout-page">
     
     <nav class="nav-desktop" id="desktop">
         <div class="content">
@@ -90,125 +90,113 @@
 
     <section class="main">
         <div class="content">
-            <div class="content-heading">
-                <div class="img-profile">
-                    <div class="circle-image" style="background-image: url('assets/images/yopiangga.JPG');"></div>
-                    <div class="circle-edit">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                </div>
-                <div class="title-profile">
-                    <h1>Alfian Prisma Yopiangga</h1>
-                    <h4>SMKN 1 KEDIRI</h4>
+            <div class="content-head">
+                <h2>Tryout Saya</h2>
+                <div class="filter">
+                    <select name="" id="" class="filter-jenis">
+                        <option>Jenis Tryout</option>
+                        <option value="semua">Semua</option>
+                        <option value="utbk">Tryout UTBK</option>
+                        <option value="bebas">Tryout Bebas</option>
+                        <option value="paket">Paket Tryout</option>
+                        <option value="kuno">Tryout Kuno</option>
+                    </select>
                 </div>
             </div>
             <div class="content-body">
-                <form action="">
-                    <div class="form">
-                        <div class="form-left">
-                            <h2>Data Pribadi</h2>
-                            <hr>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Nama Depan</label>
-                                        <input type="text" placeholder="Alfian">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Nama Belakang</label>
-                                        <input type="text" placeholder="Yopiangga">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Email</label>
-                                        <input type="text" placeholder="user@email.com">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">No Telephone</label>
-                                        <input type="text" placeholder="+62 823 xxxx xxxx">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Sekolah</label>
-                                        <input type="text" placeholder="SMKN 1 KEDIRI">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Tahun Lulus</label>
-                                        <input type="text" placeholder="2020">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Provinsi</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Kota / Kabupaten</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Alamat</label>
-                                <textarea type="text"></textarea>
-                            </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text">
+                            <h3>Tryout V3 UTBK</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
-                        <div class="form-right">
-                            <h2>Pilihan Universitas</h2>
-                            <hr>
-
-                            <div class="pilihan-universitas">
-                                <h4>Pilihan Pertama</h4>
-                                <div class="content-universitas">
-                                    <div class="image" style="background-image: url('assets/images/example.jpg');"></div>
-                                    <div class="form-group">
-                                        <select name="" id="">
-                                            <option>Nama Universitas</option>
-                                        </select>
-                                        <select name="" id="">
-                                            <option>Program Studi</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pilihan-universitas">
-                                <h4>Pilihan Kedua</h4>
-                                <div class="content-universitas">
-                                    <div class="image" style="background-image: url('assets/images/example.jpg');"></div>
-                                    <div class="form-group">
-                                        <select name="" id="">
-                                            <option>Nama Universitas</option>
-                                        </select>
-                                        <select name="" id="">
-                                            <option>Program Studi</option>
-                                        </select>
-                                    </div>
-                                </div>
+                        <div class="icon">
+                            <div class="circle">
+                                <i class="far fa-hourglass"></i>
                             </div>
                         </div>
                     </div>
-                    <button class="btn-simpan">Simpan</button>
-                </form>
+                    <div class="card-footer">
+                        <div class="jenis">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Tryout UTBK</h4>
+                        </div>
+                        <div class="aksi">
+                            <button class="btn-kerjakan" onclick="window.location.href='tryout-detail.html'">Kerjakan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text">
+                            <h3>Tryout V3 UTBK</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="icon">
+                            <div class="circle">
+                                <i class="far fa-hourglass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="jenis">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Tryout UTBK</h4>
+                        </div>
+                        <div class="aksi">
+                            <button class="btn-kerjakan" onclick="window.location.href='tryout-detail.html'">Kerjakan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text">
+                            <h3>Tryout V3 UTBK</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="icon">
+                            <div class="circle">
+                                <i class="far fa-hourglass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="jenis">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Tryout UTBK</h4>
+                        </div>
+                        <div class="aksi">
+                            <button class="btn-kerjakan" onclick="window.location.href='tryout-detail.html'">Kerjakan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text">
+                            <h3>Tryout V3 UTBK</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="icon">
+                            <div class="circle">
+                                <i class="far fa-hourglass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="jenis">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Tryout UTBK</h4>
+                        </div>
+                        <div class="aksi">
+                            <button class="btn-kerjakan" onclick="window.location.href='tryout-detail.html'">Kerjakan</button>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </section>
-
+    
     <section class="footer">
         <div class="content">
             <div class="body">

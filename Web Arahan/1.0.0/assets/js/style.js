@@ -1,17 +1,4 @@
 
-$('.beli-tryout-detail .info-mapel-tryout .content nav .nav-left').click(function () {
-    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-left').addClass('active');
-    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-right').removeClass('active');
-    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tka').addClass('disable');
-    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tps').removeClass('disable');
-});
-
-$('.beli-tryout-detail .info-mapel-tryout .content nav .nav-right').click(function () {
-    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-left').removeClass('active');
-    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-right').addClass('active');
-    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tka').removeClass('disable');
-    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tps').addClass('disable');
-});
 
 
 $(window).scroll(function () {
@@ -138,17 +125,45 @@ $('.testimonial-page .testimonial-section#mobile .content .content-body .circle-
 });
 
 
-// $('.testimonial-page .testimonial-section .content .content-body .circle-right').click(function () {
-//     if( navigasiTestimonial <= (cardTestimoni.length - 3) * 340 ){
-//         navigasiTestimonial = navigasiTestimonial + 340;
-//         $('.testimonial-page .testimonial-section .content .content-body .card-group .card-slide').css({"left" : -navigasiTestimonial, "transition" : "900ms"});
-//     }
-// });
+$('.nav-desktop .content .icon .icon-profile').click(function(){
+    $('.nav-desktop .content .icon .dropdownProfile').toggleClass('active')
+})
 
-// $('.testimonial-page .testimonial-section .content .content-body .circle-left').click(function () {
-//     if(navigasiTestimonial >= 340 && navigasiTestimonial <= cardTestimoni.length * 430 ){
-//         navigasiTestimonial = navigasiTestimonial - 340;
-//         $('.testimonial-page .testimonial-section .content .content-body .card-group .card-slide').css({"left" : -navigasiTestimonial, "transition" : "900ms"});
-//     }
-// });
+$('.nav-mobile .content .icon .icon-profile').click(function(){
+    $('.nav-mobile .content .icon .dropdownProfile').toggleClass('active')
+})
 
+$('section').click(function(){
+    $('.nav-desktop .content .icon .dropdownProfile').removeClass('active')
+    $('.nav-mobile .content .icon .dropdownProfile').removeClass('active')
+})
+
+
+
+$('.beli-tryout-detail .info-mapel-tryout .content nav .nav-left').click(function () {
+    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-left').addClass('active');
+    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-right').removeClass('active');
+    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tka').addClass('disable');
+    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tps').removeClass('disable');
+});
+
+$('.beli-tryout-detail .info-mapel-tryout .content nav .nav-right').click(function () {
+    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-left').removeClass('active');
+    $('.beli-tryout-detail .info-mapel-tryout .content nav .nav-right').addClass('active');
+    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tka').removeClass('disable');
+    $('.beli-tryout-detail .info-mapel-tryout .content .content-body .card-tps').addClass('disable');
+});
+
+$('.tryout-detail .info-mapel-tryout .content nav .nav-left').click(function () {
+    $('.tryout-detail .info-mapel-tryout .content nav .nav-left').addClass('active');
+    $('.tryout-detail .info-mapel-tryout .content nav .nav-right').removeClass('active');
+    $('.tryout-detail .info-mapel-tryout .content .content-body .card-tka').addClass('disable');
+    $('.tryout-detail .info-mapel-tryout .content .content-body .card-tps').removeClass('disable');
+});
+
+$('.tryout-detail .info-mapel-tryout .content nav .nav-right').click(function () {
+    $('.tryout-detail .info-mapel-tryout .content nav .nav-left').removeClass('active');
+    $('.tryout-detail .info-mapel-tryout .content nav .nav-right').addClass('active');
+    $('.tryout-detail .info-mapel-tryout .content .content-body .card-tka').removeClass('disable');
+    $('.tryout-detail .info-mapel-tryout .content .content-body .card-tps').addClass('disable');
+});
