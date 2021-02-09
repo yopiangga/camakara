@@ -3028,6 +3028,492 @@
 
     }
 
+    .tryout-detail {
+
+        .info-detail-tryout {
+            padding-top: 80px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+
+            .content {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+
+                .content-left {
+                    width: 100%;
+
+                    .nama-tryout {
+                        margin-top: 30px;
+                        position: relative;
+                        display: flex;
+                        margin-bottom: 30px;
+
+                        h2 {
+                            font-size: 24px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            margin-right: 20px;
+                        }
+
+                        hr {
+                            position: absolute;
+                            width: 50px;
+                            bottom: -10px;
+                            left: 5px;
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+
+                        .btn-daftar {
+                            padding: 10px 20px 10px 20px;
+                            background-color: white;
+                            border: 1px solid $colorYellow;
+                            border-radius: 5px;
+                            font-weight: 600;
+                            color: $colorYellow;
+                            cursor: pointer;
+                        }
+
+                        .btn-daftar:hover {
+                            background-color: $colorYellow;
+                            color: white;
+                            border: 1px solid $colorYellow;
+                            transition: 300ms;
+                        }
+                    }
+
+                    .widget {
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        justify-content: space-between;
+
+                        .widget-child {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 33%;
+                            text-align: center;
+                            line-height: 21px;
+
+                            i {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+
+                    .deskripsi-tryout {
+                        position: relative;
+
+                        h3 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                        }
+
+                        hr {
+                            position: absolute;
+                            width: 50px;
+                            top: 18px;
+                            left: 0px;
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+
+                        p {
+                            line-height: 28px;
+                        }
+                    }
+                }
+
+                .content-right {
+                    box-sizing: border-box;
+                    width: 100%;
+
+                    .tanggal-pengerjaan {
+                        margin-top: 50px;
+                        margin-bottom: 30px;
+                        position: relative;
+
+                        h3 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 30px;
+                        }
+
+                        hr {
+                            position: absolute;
+                            width: 50px;
+                            top: 18px;
+                            left: 0px;
+                            color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                        }
+
+                        p {
+                            line-height: 28px;
+                            margin-bottom: 20px;
+                        }
+
+                        .waktu-pengerjaan {
+                            display: flex;
+
+                            .box {
+                                width: 60px;
+                                height: 60px;
+                                background-color: white;
+                                margin-right: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5px;
+                                border: 2px solid $colorYellow;
+
+                                h4 {
+                                    font-weight: 600;
+                                    margin-bottom: 5px;
+                                }
+
+                                h6 {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .beli-tryout {
+
+                        .btn-beli-tryout {
+                            padding: 12px 25px 12px 25px;
+                            background-color: $colorYellow;
+                            border: 1px solid $colorYellow;
+                            border-radius: 5px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: $colorDark;
+                            cursor: pointer;
+                            width: 100%;
+                        }
+
+                        .btn-beli-tryout:hover {
+                            background-color: white;
+                            border: 1px solid $colorYellow;
+                            color: $colorYellow;
+                            box-shadow: 0px 60px 100px rgba($color: $colorYellow, $alpha: 0.16);
+                            transition: 300ms;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .info-mapel-tryout {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+
+                nav {
+                    display: flex;
+                    width: 100%;
+                    text-align: center;
+                    cursor: pointer;
+                    margin-bottom: 50px;
+
+                    .navigation {
+                        width: 50%;
+                        padding: 10px;
+
+                        h2 {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .navigation:hover {
+                        border-bottom: 3px solid $colorYellow;
+                    }
+
+                    .nav-left.active {
+                        border-bottom: 3px solid $colorYellow;
+                    }
+
+                    .nav-right.active {
+                        border-bottom: 3px solid $colorYellow;
+                    }
+
+                }
+
+                .content-body {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .card-1 {
+                        z-index: 1;
+                    }
+
+                    .card-2 {
+                        z-index: 2;
+                    }
+
+                    .card-3 {
+                        z-index: 3;
+                    }
+
+                    .card-4 {
+                        z-index: 4;
+                    }
+
+                    .card-5 {
+                        z-index: 4;
+                    }
+
+                    .card {
+                        width: 350px;
+                        box-shadow: 0px 10px 30px rgba($color: $colorDark, $alpha: 0.08);
+                        border-radius: 20px;
+                        padding: 30px 20px 10px 20px;
+                        margin-bottom: 30px;
+                        margin-right: 15px;
+                        margin-left: 15px;
+
+                        .card-heading {
+                            display: flex;
+                            margin-bottom: 30px;
+
+                            i {
+                                margin-right: 20px;
+                                color: $colorYellow;
+                            }
+
+                            h3 {
+                                font-weight: 600;
+                                font-size: 16px;
+                            }
+                        }
+
+                        .card-body {
+
+                            li {
+                                list-style-type: none;
+                                display: flex;
+                                margin-bottom: 15px;
+
+                                i {
+                                    margin-right: 20px;
+                                }
+
+                                h4 {
+                                    font-size: 14px;
+
+                                    span {
+                                        font-weight: 600;
+                                    }
+                                }
+
+                                .action {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: flex-end;
+
+                                    .btn-kerjakan {
+                                        padding: 8px 25px 8px 25px;
+                                        background-color: $colorYellow;
+                                        border: 1px solid $colorYellow;
+                                        border-radius: 5px;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        color: $colorDark;
+                                        cursor: pointer;
+                                    }
+            
+                                    .btn-kerjakan:hover {
+                                        background-color: white;
+                                        border: 1px solid $colorYellow;
+                                        color: $colorYellow;
+                                        transition: 300ms;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .card-tka.disable {
+                        display: none;
+                    }
+
+                    .card-tps.disable {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .myTryout-page {
+
+        .main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+
+                .content-head {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                    .filter {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        select {
+                            padding: 8px 15px 8px 15px;
+                            border-radius: 5px;
+                            color: $colorDark;
+                            border: 1px solid $colorYellow;
+                            outline: none;
+                            background-color: white;
+                        }
+
+                        .filter-status {
+                            width: 59%;
+                        }
+
+                        .filter-jenis {
+                            width: 39%;
+                        }
+                    }
+                }
+
+                .content-body {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    .card {
+                        width: 390px;
+                        height: 180px;
+                        box-shadow: 0px 15px 45px rgba($color: $colorDark, $alpha: 0.08);
+                        border-radius: 20px;
+                        padding: 25px;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+
+                        .card-body {
+                            display: flex;
+
+                            .text {
+                                width: 80%;
+
+                                h3 {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                }
+
+                                p {
+                                    line-height: 21px;
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .icon {
+                                width: 20%;
+                                display: flex;
+                                justify-content: flex-end;
+
+                                .circle {
+                                    width: 50px;
+                                    height: 50px;
+                                    background-color: $colorLight;
+                                    border-radius: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    i {
+                                        font-size: 20px;
+                                        color: $colorPink;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-footer {
+                            display: flex;
+
+                            .jenis {
+                                width: 50%;
+                                display: flex;
+
+                                i {
+                                    font-size: 16px;
+                                    margin-right: 10px;
+                                    color: $colorYellow;
+                                }
+
+                                h4 {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            .aksi {
+                                width: 50%;
+                                display: flex;
+                                justify-content: flex-end;
+
+                                .btn-kerjakan {
+                                    padding: 8px 25px 8px 25px;
+                                    background-color: $colorYellow;
+                                    border: 1px solid $colorYellow;
+                                    border-radius: 5px;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    color: $colorDark;
+                                    cursor: pointer;
+                                }
+        
+                                .btn-kerjakan:hover {
+                                    background-color: white;
+                                    border: 1px solid $colorYellow;
+                                    color: $colorYellow;
+                                    transition: 300ms;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .riwayatPembelian-page {
 

@@ -3151,6 +3151,508 @@
   .beli-tryout-detail .info-mapel-tryout .content .content-body .card-tps.disable {
     display: none;
   }
+  .tryout-detail .info-detail-tryout {
+    padding-top: 80px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tryout-detail .info-detail-tryout .content {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left {
+    width: 100%;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .nama-tryout {
+    margin-top: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .nama-tryout h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .nama-tryout hr {
+    position: absolute;
+    width: 50px;
+    bottom: -10px;
+    left: 5px;
+    color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .nama-tryout .btn-daftar {
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #FDBF1F;
+    cursor: pointer;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .nama-tryout .btn-daftar:hover {
+    background-color: #FDBF1F;
+    color: white;
+    border: 1px solid #FDBF1F;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .widget .widget-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 33%;
+    text-align: center;
+    line-height: 21px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .widget .widget-child i {
+    margin-bottom: 15px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout {
+    position: relative;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout hr {
+    position: absolute;
+    width: 50px;
+    top: 18px;
+    left: 0px;
+    color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+  }
+  .tryout-detail .info-detail-tryout .content .content-left .deskripsi-tryout p {
+    line-height: 28px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan hr {
+    position: absolute;
+    width: 50px;
+    top: 18px;
+    left: 0px;
+    color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan p {
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan .box {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    border: 2px solid #FDBF1F;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan .box h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .tanggal-pengerjaan .waktu-pengerjaan .box h6 {
+    font-size: 14px;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .beli-tryout .btn-beli-tryout {
+    padding: 12px 25px 12px 25px;
+    background-color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #393939;
+    cursor: pointer;
+    width: 100%;
+  }
+  .tryout-detail .info-detail-tryout .content .content-right .beli-tryout .btn-beli-tryout:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    -webkit-box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
+            box-shadow: 0px 60px 100px rgba(253, 191, 31, 0.16);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .tryout-detail .info-mapel-tryout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .tryout-detail .info-mapel-tryout .content {
+    width: 90%;
+  }
+  .tryout-detail .info-mapel-tryout .content nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  .tryout-detail .info-mapel-tryout .content nav .navigation {
+    width: 50%;
+    padding: 10px;
+  }
+  .tryout-detail .info-mapel-tryout .content nav .navigation h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .tryout-detail .info-mapel-tryout .content nav .navigation:hover {
+    border-bottom: 3px solid #FDBF1F;
+  }
+  .tryout-detail .info-mapel-tryout .content nav .nav-left.active {
+    border-bottom: 3px solid #FDBF1F;
+  }
+  .tryout-detail .info-mapel-tryout .content nav .nav-right.active {
+    border-bottom: 3px solid #FDBF1F;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-1 {
+    z-index: 1;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-2 {
+    z-index: 2;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-3 {
+    z-index: 3;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-4 {
+    z-index: 4;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-5 {
+    z-index: 4;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card {
+    width: 350px;
+    -webkit-box-shadow: 0px 10px 30px rgba(57, 57, 57, 0.08);
+            box-shadow: 0px 10px 30px rgba(57, 57, 57, 0.08);
+    border-radius: 20px;
+    padding: 30px 20px 10px 20px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-heading i {
+    margin-right: 20px;
+    color: #FDBF1F;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-heading h3 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li i {
+    margin-right: 20px;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li h4 {
+    font-size: 14px;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li h4 span {
+    font-weight: 600;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li .action {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li .action .btn-kerjakan {
+    padding: 8px 25px 8px 25px;
+    background-color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #393939;
+    cursor: pointer;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card .card-body li .action .btn-kerjakan:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-tka.disable {
+    display: none;
+  }
+  .tryout-detail .info-mapel-tryout .content .content-body .card-tps.disable {
+    display: none;
+  }
+  .myTryout-page .main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+  }
+  .myTryout-page .main .content {
+    width: 90%;
+  }
+  .myTryout-page .main .content .content-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myTryout-page .main .content .content-head h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .myTryout-page .main .content .content-head .filter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .myTryout-page .main .content .content-head .filter select {
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    color: #393939;
+    border: 1px solid #FDBF1F;
+    outline: none;
+    background-color: white;
+  }
+  .myTryout-page .main .content .content-head .filter .filter-status {
+    width: 59%;
+  }
+  .myTryout-page .main .content .content-head .filter .filter-jenis {
+    width: 39%;
+  }
+  .myTryout-page .main .content .content-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .myTryout-page .main .content .content-body .card {
+    width: 390px;
+    height: 180px;
+    -webkit-box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.08);
+            box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.08);
+    border-radius: 20px;
+    padding: 25px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .myTryout-page .main .content .content-body .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .myTryout-page .main .content .content-body .card .card-body .text {
+    width: 80%;
+  }
+  .myTryout-page .main .content .content-body .card .card-body .text h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .myTryout-page .main .content .content-body .card .card-body .text p {
+    line-height: 21px;
+    font-size: 14px;
+  }
+  .myTryout-page .main .content .content-body .card .card-body .icon {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .myTryout-page .main .content .content-body .card .card-body .icon .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #EFEFEF;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myTryout-page .main .content .content-body .card .card-body .icon .circle i {
+    font-size: 20px;
+    color: #F17EAB;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer .jenis {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer .jenis i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #FDBF1F;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer .jenis h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer .aksi {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer .aksi .btn-kerjakan {
+    padding: 8px 25px 8px 25px;
+    background-color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #393939;
+    cursor: pointer;
+  }
+  .myTryout-page .main .content .content-body .card .card-footer .aksi .btn-kerjakan:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
   .riwayatPembelian-page .main {
     width: 100%;
     display: -webkit-box;
