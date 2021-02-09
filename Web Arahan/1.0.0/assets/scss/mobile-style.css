@@ -2145,7 +2145,7 @@
   }
   .product-page .information-card {
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2238,7 +2238,7 @@
     padding-bottom: 5px;
   }
   .product-page .cari-tryout .content .content-heading .search {
-    width: 65%;
+    width: 55%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2326,28 +2326,13 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .product-page .cari-tryout .content .content-heading .filter .btn-filter {
-    padding: 8px 20px 8px 20px;
+  .product-page .cari-tryout .content .content-heading .filter select {
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    color: #393939;
+    border: 1px solid #FDBF1F;
+    outline: none;
     background-color: white;
-    border: 1px solid #C4C4C4;
-    border-radius: 5px;
-    font-weight: 600;
-    color: #C4C4C4;
-    cursor: pointer;
-    font-weight: 600;
-    width: 100px;
-    margin-left: auto;
-  }
-  .product-page .cari-tryout .content .content-heading .filter .btn-filter:hover {
-    padding: 8px 20px 8px 20px;
-    background-color: #393939;
-    border: 1px solid #393939;
-    border-radius: 5px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    -webkit-transition: 300ms;
-    transition: 300ms;
   }
   .product-page .card-tryout {
     position: relative;
@@ -2542,10 +2527,11 @@
   }
   .testimonial-page .main .content .content-right .card-group {
     position: absolute;
+    width: 100%;
   }
   .testimonial-page .main .content .content-right .card-group .card {
     margin-top: 30px;
-    width: 350px;
+    width: 100%;
     position: absolute;
     background-color: transparent;
     border-radius: 10px;
@@ -2635,18 +2621,17 @@
   }
   .testimonial-page .testimonial-section {
     width: 100%;
+    height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-bottom: 50px;
+    padding-top: 100px;
   }
   .testimonial-page .testimonial-section .content {
-    width: 90%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2657,7 +2642,7 @@
   }
   .testimonial-page .testimonial-section .content .content-title {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
   .testimonial-page .testimonial-section .content .content-title h2 {
     font-size: 32px;
@@ -2667,20 +2652,20 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .testimonial-page .testimonial-section .content .content-body .circle {
-    width: 9%;
-    height: 9%;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     background-color: white;
-    -webkit-box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.16);
-            box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.16);
+    -webkit-box-shadow: 0px 15px 30px rgba(57, 57, 57, 0.16);
+            box-shadow: 0px 15px 30px rgba(57, 57, 57, 0.16);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2690,19 +2675,25 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
-    top: 0px;
+    position: absolute;
     -webkit-transition: 100ms;
     transition: 100ms;
     cursor: pointer;
+    top: 150px;
+    z-index: 10;
   }
   .testimonial-page .testimonial-section .content .content-body .circle i {
     font-size: 24px;
   }
+  .testimonial-page .testimonial-section .content .content-body .circle-left {
+    left: 20px;
+  }
+  .testimonial-page .testimonial-section .content .content-body .circle-right {
+    right: 20px;
+  }
   .testimonial-page .testimonial-section .content .content-body .circle:hover {
+    top: 160px;
     color: #FDBF1F;
-    position: relative;
-    top: 10px;
     -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
@@ -2711,13 +2702,26 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 450px;
+    padding-bottom: 10px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card-last {
+    margin-right: 60px;
+  }
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card {
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: white;
     width: 250px;
     height: 280px;
@@ -2727,7 +2731,9 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 20px;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2737,7 +2743,7 @@
             align-items: center;
     position: relative;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .circle-image {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .circle-image {
     position: absolute;
     top: -40px;
     border-radius: 100%;
@@ -2751,45 +2757,42 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .circle-image img {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .circle-image img {
     height: 80px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .card-text {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .card-text {
     text-align: center;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .card-text h3 {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .card-text h3 {
     font-weight: 600;
     font-size: 16px;
     margin-top: 70px;
     margin-bottom: 20px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .card-text p {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .card-text p {
     line-height: 28px;
     font-size: 14px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active {
     width: 300px;
     height: 330px;
     -webkit-box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.24);
             box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.24);
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .circle-image {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .circle-image {
     height: 100px;
     width: 100px;
     top: -50px;
     -webkit-box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.32);
             box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.32);
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .circle-image img {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .circle-image img {
     height: 100px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .card-text h3 {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .card-text h3 {
     font-size: 18px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .card-text p {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .card-text p {
     font-size: 14px;
   }
   .beli-tryout-detail .info-detail-tryout {
@@ -3137,6 +3140,8 @@
     border-radius: 5px;
     color: #393939;
     border: 1px solid #FDBF1F;
+    outline: none;
+    background-color: white;
   }
   .riwayatPembelian-page .main .content .content-head .filter .filter-status {
     width: 59%;

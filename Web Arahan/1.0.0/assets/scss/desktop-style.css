@@ -2124,9 +2124,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     height: 40px;
     padding-bottom: 5px;
   }
@@ -2544,7 +2544,7 @@
     padding-top: 100px;
   }
   .testimonial-page .testimonial-section .content {
-    width: 90%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2555,7 +2555,7 @@
   }
   .testimonial-page .testimonial-section .content .content-title {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
   .testimonial-page .testimonial-section .content .content-title h2 {
     font-size: 32px;
@@ -2570,14 +2570,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .testimonial-page .testimonial-section .content .content-body .circle {
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-color: white;
-    -webkit-box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.16);
-            box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.16);
+    -webkit-box-shadow: 0px 15px 30px rgba(57, 57, 57, 0.16);
+            box-shadow: 0px 15px 30px rgba(57, 57, 57, 0.16);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2587,19 +2588,25 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
-    top: 0px;
+    position: absolute;
     -webkit-transition: 100ms;
     transition: 100ms;
     cursor: pointer;
+    top: 150px;
+    z-index: 10;
   }
   .testimonial-page .testimonial-section .content .content-body .circle i {
     font-size: 24px;
   }
+  .testimonial-page .testimonial-section .content .content-body .circle-left {
+    left: 100px;
+  }
+  .testimonial-page .testimonial-section .content .content-body .circle-right {
+    right: 100px;
+  }
   .testimonial-page .testimonial-section .content .content-body .circle:hover {
+    top: 160px;
     color: #FDBF1F;
-    position: relative;
-    top: 10px;
     -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
@@ -2608,13 +2615,25 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 450px;
+    padding-bottom: 10px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card-last {
+    margin-right: 90px;
+  }
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card {
+    margin-left: 90px;
     background-color: white;
     width: 250px;
     height: 280px;
@@ -2636,7 +2655,7 @@
             align-items: center;
     position: relative;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .circle-image {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .circle-image {
     position: absolute;
     top: -40px;
     border-radius: 100%;
@@ -2650,42 +2669,42 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .circle-image img {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .circle-image img {
     height: 80px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .card-text {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .card-text {
     text-align: center;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .card-text h3 {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .card-text h3 {
     font-weight: 600;
     font-size: 16px;
     margin-top: 70px;
     margin-bottom: 20px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card .card-text p {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card .card-text p {
     line-height: 28px;
     font-size: 14px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active {
     width: 300px;
     height: 330px;
     -webkit-box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.24);
             box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.24);
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .circle-image {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .circle-image {
     height: 100px;
     width: 100px;
     top: -50px;
     -webkit-box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.32);
             box-shadow: 0px 15px 45px rgba(57, 57, 57, 0.32);
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .circle-image img {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .circle-image img {
     height: 100px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .card-text h3 {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .card-text h3 {
     font-size: 18px;
   }
-  .testimonial-page .testimonial-section .content .content-body .card-group .card.active .card-text p {
+  .testimonial-page .testimonial-section .content .content-body .card-group .card-slide .card.active .card-text p {
     font-size: 14px;
   }
   .beli-tryout-detail .info-detail-tryout {
