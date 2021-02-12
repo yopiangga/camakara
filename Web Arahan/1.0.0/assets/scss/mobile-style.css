@@ -3692,9 +3692,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .riwayatPembelian-page .main .content .content-head .filter select {
     padding: 8px 15px 8px 15px;
@@ -3703,6 +3702,17 @@
     border: 1px solid #FDBF1F;
     outline: none;
     background-color: white;
+  }
+  .riwayatPembelian-page .main .content .content-head .filter button {
+    padding: 8px 20px 8px 20px;
+    background-color: #FDBF1F;
+    border: 1px solid transparent;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 30px;
   }
   .riwayatPembelian-page .main .content .content-head .filter .filter-status {
     width: 59%;

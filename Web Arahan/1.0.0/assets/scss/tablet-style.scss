@@ -3549,24 +3549,34 @@
                     .filter {
                         width: 100%;
                         display: flex;
-                        justify-content: space-between;
+                        flex-wrap: wrap;
 
                         select {
-                            padding: 8px 15px 8px 15px;
+                            padding: 0px 15px 0px 15px;
                             border-radius: 5px;
                             color: $colorDark;
                             border: 1px solid $colorYellow;
                             outline: none;
                             background-color: white;
+                            height: 35px;
+                            box-sizing: border-box;
+                            margin-left: auto;
                         }
 
-                        .filter-status {
-                            width: 59%;
+                        button {
+                            height: 35px;
+                            box-sizing: border-box;
+                            padding: 0px 20px 0px 20px;
+                            background-color: $colorYellow;
+                            border: 1px solid transparent;
+                            outline: none;
+                            color: white;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            margin-right: 5px;
+                            margin-bottom: 30px;
                         }
 
-                        .filter-jenis {
-                            width: 39%;
-                        }
                     }
                 }
 
@@ -3663,6 +3673,23 @@
         }
     }
 
+    .topup-page {
+
+        .main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+
+                
+            }
+        }
+    }
 
     #desktop {
         display: none;

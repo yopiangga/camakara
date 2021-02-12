@@ -3705,23 +3705,34 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .riwayatPembelian-page .main .content .content-head .filter select {
-    padding: 8px 15px 8px 15px;
+    padding: 0px 15px 0px 15px;
     border-radius: 5px;
     color: #393939;
     border: 1px solid #FDBF1F;
     outline: none;
     background-color: white;
+    height: 35px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-left: auto;
   }
-  .riwayatPembelian-page .main .content .content-head .filter .filter-status {
-    width: 59%;
-  }
-  .riwayatPembelian-page .main .content .content-head .filter .filter-jenis {
-    width: 39%;
+  .riwayatPembelian-page .main .content .content-head .filter button {
+    height: 35px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 20px 0px 20px;
+    background-color: #FDBF1F;
+    border: 1px solid transparent;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 30px;
   }
   .riwayatPembelian-page .main .content .content-body {
     display: -webkit-box;
@@ -3831,6 +3842,21 @@
   .riwayatPembelian-page .main .content .content-body .card .card-footer .waktu h4 {
     font-size: 14px;
     font-weight: 600;
+  }
+  .topup-page .main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content {
+    width: 90%;
   }
   #desktop {
     display: none;

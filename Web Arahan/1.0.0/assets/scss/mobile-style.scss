@@ -3544,7 +3544,7 @@
                     .filter {
                         width: 100%;
                         display: flex;
-                        justify-content: space-between;
+                        flex-wrap: wrap;
 
                         select {
                             padding: 8px 15px 8px 15px;
@@ -3553,6 +3553,18 @@
                             border: 1px solid $colorYellow;
                             outline: none;
                             background-color: white;
+                        }
+
+                        button {
+                            padding: 8px 20px 8px 20px;
+                            background-color: $colorYellow;
+                            border: 1px solid transparent;
+                            outline: none;
+                            color: white;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            margin-right: 5px;
+                            margin-bottom: 30px;
                         }
 
                         .filter-status {
