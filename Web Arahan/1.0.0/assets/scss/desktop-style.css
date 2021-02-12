@@ -3835,6 +3835,8 @@
     background-color: #C4C4C4;
   }
   .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button {
+    font-family: "Poppins";
+    color: #393939;
     width: 100%;
     height: 45px;
     -webkit-box-sizing: border-box;
@@ -3940,8 +3942,10 @@
     margin-right: 20px;
   }
   .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .left h4 {
+    font-family: "Poppins";
     font-size: 16px;
     font-weight: 500;
+    color: #393939;
   }
   .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .right {
     width: 20%;

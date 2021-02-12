@@ -3717,6 +3717,8 @@ $colorBlack : #000000;
                                         }
 
                                         button {
+                                            font-family: $fontPrimary;
+                                            color: $colorDark;
                                             width: 100%;
                                             height: 45px;
                                             box-sizing: border-box;
@@ -3806,8 +3808,10 @@ $colorBlack : #000000;
                                             }
 
                                             h4 {
+                                                font-family: $fontPrimary;
                                                 font-size: 16px;
                                                 font-weight: 500;
+                                                color: $colorDark;    
                                             }
                                         }
 
