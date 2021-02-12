@@ -3670,6 +3670,660 @@
         }
     }
 
+    .topup-page {
+
+        .main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+
+                .content-head {
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 36px;
+                    }
+                }
+                
+                .content-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card-metode {
+                        width: 100%;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+
+                        .form {
+                            width: 100%;
+                            text-align: center;
+
+                            h2 {
+                                font-weight: 600;
+                                font-size: 20px;
+                                margin-bottom: 50px;
+                            }
+
+                            .form-group-select {
+                                text-align: left;
+                                display: flex;
+                                margin-bottom: 30px;
+                                width: 100%;
+
+                                .group-left {
+                                    width: 20%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    img {
+                                        width: 40px;
+                                    }
+                                }
+
+                                .group-right {
+                                    width: 80%;
+
+                                    .select {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        height: 40px;
+                                        cursor: pointer;
+
+                                        .title {
+                                            width: 90%;
+
+                                            h3 {
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                            }
+                                        }
+
+                                        .icon-right {
+                                            width: 10%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            i.active {
+                                                transform: rotate(180deg);
+                                                color: $colorYellow;
+                                            }
+                                        }
+                                    }
+
+                                    .select-body.active {
+                                        height: 250px;
+                                        transition: 500ms;
+                                    }
+
+                                    .select-body {
+                                        transition: 500ms;
+                                        height: 0px;
+                                        overflow: hidden;
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        hr {
+                                            width: 100%;
+                                            border: none;
+                                            height: 1px;
+                                            background-color: $colorGray;
+                                        }
+
+                                        button {
+                                            width: 100%;
+                                            height: 45px;
+                                            box-sizing: border-box;
+                                            padding: 5px 20px 5px 20px;
+                                            display: flex;
+                                            align-items: center;
+                                            outline: none;
+                                            border: 1px solid transparent;
+                                            margin: 0;
+                                            background-color: white;
+                                            cursor: pointer;
+
+                                            .left {
+                                                width: 80%;
+                                                display: flex;
+                                                align-items: center;
+                                                img {
+                                                    width: 40px;
+                                                    margin-right: 20px;
+                                                }
+    
+                                                h4 {
+                                                    font-size: 16px;
+                                                    font-weight: 500;
+                                                }
+                                            }
+
+                                            .right {
+                                                width: 20%;
+
+                                                i {
+                                                    display: none;
+                                                    font-size: 24px;
+                                                    color: $colorYellow;
+                                                }
+
+                                                i.active {
+                                                    display: block;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .form-group {
+                                text-align: left;
+                                display: flex;
+                                margin-bottom: 30px;
+                                width: 100%;
+
+                                .group-left {
+                                    width: 20%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    img {
+                                        width: 40px;
+                                    }
+                                }
+
+                                .group-right {
+                                    width: 80%;
+
+                                    button {
+                                        width: 100%;
+                                        height: 30px;
+                                        box-sizing: border-box;
+                                        padding: 5px 20px 5px 0px;
+                                        display: flex;
+                                        align-items: center;
+                                        outline: none;
+                                        border: 1px solid transparent;
+                                        margin: 0;
+                                        background-color: white;
+                                        cursor: pointer;
+
+                                        .left {
+                                            width: 80%;
+                                            display: flex;
+                                            align-items: center;
+                                            img {
+                                                width: 40px;
+                                                margin-right: 20px;
+                                            }
+
+                                            h4 {
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                            }
+                                        }
+
+                                        .right {
+                                            width: 20%;
+
+                                            i {
+                                                display: none;
+                                                font-size: 24px;
+                                                color: $colorYellow;
+                                            }
+
+                                            i.active {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                           
+                        }
+                    }
+
+                    .card-jumlah {
+                        width: 100%;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+
+                        .form {
+                            width: 100%;
+                            text-align: center;
+
+                            h2 {
+                                font-weight: 600;
+                                font-size: 20px;
+                                margin-bottom: 50px;
+                            }
+
+                            .choice-group {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                margin-bottom: 30px;
+
+                                .btn-choice {
+                                    width: 100px;
+                                    height: 80px;
+                                    margin-bottom: 10px;
+                                    background-color: white;
+                                    border: 1px solid rgba($color: $colorYellow, $alpha: 0.8);
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    color: $colorDark;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                    transition: 300ms;
+                                }
+
+                                .btn-choice:hover {
+                                    transition: 300ms;
+                                    background-color: $colorYellow;
+                                    color: white;
+                                }
+
+                                .btn-choice.active {
+                                    background-color: $colorYellow;
+                                    color: white;
+                                }
+                            }
+
+                            .form-group {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                text-align: left;
+                                margin-bottom: 10px;
+
+                                label {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 20px;
+                                }
+
+                                input {
+                                    font-size: 36px;
+                                    color: $colorDark;
+                                    padding: 0px 10px 0px 10px;
+                                    border: 1px solid transparent;
+                                    outline: none;
+                                }
+
+                                .jumlah-topup {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: 20px;
+
+                                    h4 {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                    }
+                                }
+
+                                .jumlah-pembayaran {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    h4 {
+                                        font-weight: 600;
+                                        font-size: 18px;
+
+                                        span {
+                                            color: $colorYellow;
+                                        }
+                                    }
+                                }
+                            }
+
+                            hr {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+
+                    .card-transfer-detail {
+                        width: 100%;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+
+                        .form {
+                            width: 100%;
+                            text-align: center;
+
+                            h2 {
+                                font-weight: 600;
+                                font-size: 20px;
+                                margin-bottom: 50px;
+                            }
+
+                            .form-group {
+                                text-align: left;
+                                margin-bottom: 30px;
+
+                                h3 {
+                                    font-weight: 600;
+                                    margin-bottom: 10px;
+
+                                    span {
+                                        color: $colorYellow;
+                                        font-size: 24px;
+                                    }
+                                }
+
+                                hr {
+                                    margin-bottom: 20px;
+                                }
+
+                                h5 {
+                                    margin-bottom: 20px;
+                                }
+
+                                h4 {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    margin-top: 10px;
+                                    margin-bottom: 20px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .form-image {
+                                margin-bottom: 100px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+
+                                .avatar {
+                                    margin-bottom: 20px;
+                                }
+
+                                .lewati-image {
+                                    display: flex;
+                                    align-items: center;
+                                    cursor: pointer;
+
+                                    input {
+                                        margin-right: 10px;
+                                    }
+                                    
+                                    label {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+
+                            .btn-konfirmasi {
+                                padding: 12px 20px 12px 20px;
+                                background-color: $colorYellow;
+                                border: 1px solid $colorYellow;
+                                border-radius: 5px;
+                                font-weight: 600;
+                                color: white;
+                                cursor: pointer;
+                                font-weight: 600;
+                                width: 350px;
+                            }
+        
+                            .btn-konfirmasi:hover {
+                                background-color: white;
+                                border: 1px solid $colorYellow;
+                                color: $colorYellow;
+                                cursor: pointer;
+                                transition: 300ms;
+                            }
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .transferSesama-page {
+        .main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+
+                .content-head {
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                }
+                
+                .content-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card-jumlah {
+                        width: 100%;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+
+                        .form {
+                            width: 100%;
+                            text-align: center;
+
+                            h2 {
+                                font-weight: 600;
+                                font-size: 20px;
+                                margin-bottom: 50px;
+                            }
+
+                            .form-group {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                text-align: left;
+                                margin-bottom: 10px;
+
+                                label {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 20px;
+                                }
+
+                                input {
+                                    font-size: 36px;
+                                    color: $colorDark;
+                                    padding: 0px 10px 0px 10px;
+                                    border: 1px solid transparent;
+                                    outline: none;
+                                }
+
+                                .jumlah-topup {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: 20px;
+
+                                    h4 {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                    }
+                                }
+
+                                .jumlah-pembayaran {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    h4 {
+                                        font-weight: 600;
+                                        font-size: 18px;
+
+                                        span {
+                                            color: $colorYellow;
+                                        }
+                                    }
+                                }
+                            }
+
+                            hr {
+                                margin-bottom: 20px;
+                            }
+
+                            .btn-check {
+                                padding: 12px 20px 12px 20px;
+                                background-color: $colorYellow;
+                                border: 1px solid $colorYellow;
+                                border-radius: 5px;
+                                font-weight: 600;
+                                color: white;
+                                cursor: pointer;
+                                font-weight: 600;
+                                width: 350px;
+                                margin-top: 20px;
+                            }
+        
+                            .btn-check:hover {
+                                background-color: white;
+                                border: 1px solid $colorYellow;
+                                color: $colorYellow;
+                                cursor: pointer;
+                                transition: 300ms;
+                            }
+                        }
+                    }
+
+                    .card-transfer-detail.active {
+                        display: block;
+                    }
+
+                    .card-transfer-detail {
+                        display: none;
+                        width: 100%;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+
+                        .form {
+                            width: 100%;
+                            text-align: center;
+
+                            h2 {
+                                font-weight: 600;
+                                font-size: 20px;
+                                margin-bottom: 50px;
+                            }
+
+                            .form-group {
+                                text-align: left;
+                                margin-bottom: 30px;
+
+                                h3 {
+                                    font-weight: 600;
+                                    margin-bottom: 10px;
+
+                                    span {
+                                        color: $colorYellow;
+                                        font-size: 24px;
+                                    }
+                                }
+
+                                hr {
+                                    margin-bottom: 20px;
+                                }
+
+                                h5 {
+                                    margin-bottom: 20px;
+                                }
+
+                                h4 {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    margin-top: 10px;
+                                    margin-bottom: 30px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .form-action {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .btn-cancel {
+                                    padding: 12px 20px 12px 20px;
+                                    background-color: white;
+                                    border: 1px solid $colorYellow;
+                                    border-radius: 5px;
+                                    font-weight: 600;
+                                    color: $colorYellow;
+                                    cursor: pointer;
+                                    font-weight: 600;
+                                    width: 49%;
+                                }
+            
+                                .btn-cancel:hover {
+                                    background-color: white;
+                                    border: 1px solid $colorYellow;
+                                    color: $colorYellow;
+                                    cursor: pointer;
+                                    transition: 300ms;
+                                }
+
+                                .btn-konfirmasi {
+                                    padding: 12px 20px 12px 20px;
+                                    background-color: $colorYellow;
+                                    border: 1px solid $colorYellow;
+                                    border-radius: 5px;
+                                    font-weight: 600;
+                                    color: white;
+                                    cursor: pointer;
+                                    font-weight: 600;
+                                    width: 49%;
+                                }
+            
+                                .btn-konfirmasi:hover {
+                                    background-color: white;
+                                    border: 1px solid $colorYellow;
+                                    color: $colorYellow;
+                                    cursor: pointer;
+                                    transition: 300ms;
+                                }
+                            }
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     #desktop {
         display: none;

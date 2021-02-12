@@ -3858,6 +3858,670 @@
   .topup-page .main .content {
     width: 90%;
   }
+  .topup-page .main .content .content-head {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topup-page .main .content .content-head h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+  .topup-page .main .content .content-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topup-page .main .content .content-body .card-metode {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content .content-body .card-metode .form {
+    width: 100%;
+    text-align: center;
+  }
+  .topup-page .main .content .content-body .card-metode .form h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-left {
+    width: 10%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-left img {
+    width: 40px;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right {
+    width: 90%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    cursor: pointer;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select .title {
+    width: 90%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select .title h3 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select .icon-right {
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select .icon-right i.active {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    color: #FDBF1F;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body.active {
+    height: 250px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    height: 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #C4C4C4;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button {
+    width: 100%;
+    height: 45px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 20px 5px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    outline: none;
+    border: 1px solid transparent;
+    margin: 0;
+    background-color: white;
+    cursor: pointer;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button .left {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button .left img {
+    width: 40px;
+    margin-right: 20px;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button .left h4 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button .right {
+    width: 20%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button .right i {
+    display: none;
+    font-size: 24px;
+    color: #FDBF1F;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group-select .group-right .select-body button .right i.active {
+    display: block;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-left {
+    width: 10%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-left img {
+    width: 40px;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right {
+    width: 90%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button {
+    width: 100%;
+    height: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 20px 5px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    outline: none;
+    border: 1px solid transparent;
+    margin: 0;
+    background-color: white;
+    cursor: pointer;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .left {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .left img {
+    width: 40px;
+    margin-right: 20px;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .left h4 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .right {
+    width: 20%;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .right i {
+    display: none;
+    font-size: 24px;
+    color: #FDBF1F;
+  }
+  .topup-page .main .content .content-body .card-metode .form .form-group .group-right button .right i.active {
+    display: block;
+  }
+  .topup-page .main .content .content-body .card-jumlah {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form {
+    width: 100%;
+    text-align: center;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .choice-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .choice-group .btn-choice {
+    width: 220px;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid rgba(253, 191, 31, 0.8);
+    font-weight: 600;
+    font-size: 16px;
+    color: #393939;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .choice-group .btn-choice:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: #FDBF1F;
+    color: white;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .choice-group .btn-choice.active {
+    background-color: #FDBF1F;
+    color: white;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group input {
+    font-size: 36px;
+    color: #393939;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid transparent;
+    outline: none;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group .jumlah-topup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group .jumlah-topup h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group .jumlah-pembayaran {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group .jumlah-pembayaran h4 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form .form-group .jumlah-pembayaran h4 span {
+    color: #FDBF1F;
+  }
+  .topup-page .main .content .content-body .card-jumlah .form hr {
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form {
+    width: 100%;
+    text-align: center;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group h3 span {
+    color: #FDBF1F;
+    font-size: 24px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group hr {
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group h5 {
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-group p {
+    font-size: 14px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-image {
+    margin-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-image .avatar {
+    margin-bottom: 20px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-image .lewati-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-image .lewati-image input {
+    margin-right: 10px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .form-image .lewati-image label {
+    font-size: 14px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .btn-konfirmasi {
+    padding: 12px 20px 12px 20px;
+    background-color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    width: 350px;
+  }
+  .topup-page .main .content .content-body .card-transfer-detail .form .btn-konfirmasi:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .transferSesama-page .main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+  }
+  .transferSesama-page .main .content {
+    width: 90%;
+  }
+  .transferSesama-page .main .content .content-head {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .transferSesama-page .main .content .content-head h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .transferSesama-page .main .content .content-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form {
+    width: 100%;
+    text-align: center;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group input {
+    font-size: 36px;
+    color: #393939;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid transparent;
+    outline: none;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group .jumlah-topup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group .jumlah-topup h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group .jumlah-pembayaran {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group .jumlah-pembayaran h4 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .form-group .jumlah-pembayaran h4 span {
+    color: #FDBF1F;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form hr {
+    margin-bottom: 20px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .btn-check {
+    padding: 12px 20px 12px 20px;
+    background-color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    width: 350px;
+    margin-top: 20px;
+  }
+  .transferSesama-page .main .content .content-body .card-jumlah .form .btn-check:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail.active {
+    display: block;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail {
+    display: none;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form {
+    width: 100%;
+    text-align: center;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group h3 span {
+    color: #FDBF1F;
+    font-size: 24px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group hr {
+    margin-bottom: 20px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group h5 {
+    margin-bottom: 20px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-group p {
+    font-size: 14px;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-action .btn-cancel {
+    padding: 12px 20px 12px 20px;
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #FDBF1F;
+    cursor: pointer;
+    font-weight: 600;
+    width: 49%;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-action .btn-cancel:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-action .btn-konfirmasi {
+    padding: 12px 20px 12px 20px;
+    background-color: #FDBF1F;
+    border: 1px solid #FDBF1F;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    width: 49%;
+  }
+  .transferSesama-page .main .content .content-body .card-transfer-detail .form .form-action .btn-konfirmasi:hover {
+    background-color: white;
+    border: 1px solid #FDBF1F;
+    color: #FDBF1F;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
   #desktop {
     display: none;
   }
