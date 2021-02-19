@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Event - Edit Tryout</title>
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Camakara <sup></sup></div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="event.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Event
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="event-tabel-konfirmasi.html">
+                    <i class="fas fa-calendar-week"></i>
+                    <span>Tabel Konfirmasi</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="event-tabel-data.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tabel Data</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="event-tryout-tabel.html">
+                    <i class="fab fa-leanpub"></i>
+                    <span>Tryout</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="event-quiz-tabel.html">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Quiz</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Akun
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Profile</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="ubah-password.html">
+                    <i class="fas fa-fw fa-lock"></i>
+                    <span>Ubah Password</span></a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <div id="content">
+
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Yopiangga</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html" data-toggle="modal"
+                                    data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Keluar
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="container-fluid">
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Edit Tryout</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label for="">Nama Tryout</label>
+                                            <input type="text" class="form-control" value="Tryout UTBK V3">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Deskripsi Tryout</label>
+                                            <textarea class="form-control"
+                                                rows="3">Tryout UTBK V3 Bulan Februari 2021</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Tanggal Mulai</label>
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Waktu Mulai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Tanggal Selesai</label>
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Waktu Selesai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Jenis Tryout</label>
+                                            <select class="custom-select" id="jenis_tryout">
+                                                <option value="0" disabled>Pilihan</option>
+                                                <option value="1" selected>SAINTEK</option>
+                                                <option value="2">SOSHUM</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Kategori Tryout</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Tryout UTBK
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                  Tryout Bebas
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                  Tryout Lama
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Metode Pembayaran</label>
+                                            <select class="custom-select" id="metode_pembayaran">
+                                                <option value="0" disabled>Pilihan</option>
+                                                <option value="1">Gratis</option>
+                                                <option value="2" selected>Berbayar</option>
+                                            </select>
+                                        </div>
+                                        <div class="syarat-pembayaran-gratis">
+                                            <div class="form-group">
+                                                <label for="">Persyaratan 1</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="Follow IG Camakara">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Persyaratan 2</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Persyaratan 3</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Persyaratan 4</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Persyaratan 5</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Harga Tryout</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="tps">
+                                            <div class="form-group">
+                                                <label for="">Penalaran Umum</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Pemahaman Bacaan dan Menulis</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Pengetahuan dan Pemahaman Umum</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Pengetahuan Kuantitatif</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tka-saintek">
+                                            <div class="form-group">
+                                                <label for="">Kimia</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Fisika</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Biologi</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Matematika</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number" value="30">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" value="30"
+                                                            placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tka-soshum">
+                                            <div class="form-group">
+                                                <label for="">Sejarah</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Geografi</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Sosiologi</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Ekonomi</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">Jumlah Soal</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">Waktu Pengerjaan</label>
+                                                        <input class="form-control" type="number" placeholder="(menit)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Camakara Admin 2021</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+    <script>
+        if ($('#jenis_tryout option:selected').attr("value") == 1) {
+            $('.tps').show()
+            $('.tka-saintek').show()
+            $('.tka-soshum').hide()
+        } else if ($('#jenis_tryout option:selected').attr("value") == 2) {
+            $('.tps').show()
+            $('.tka-saintek').hide()
+            $('.tka-soshum').show()
+        }
+
+        $('#jenis_tryout').on('change', function () {
+            if ($('#jenis_tryout option:selected').attr("value") == 1) {
+                $('.tps').show()
+                $('.tka-saintek').show()
+                $('.tka-soshum').hide()
+            } else if ($('#jenis_tryout option:selected').attr("value") == 2) {
+                $('.tps').show()
+                $('.tka-saintek').hide()
+                $('.tka-soshum').show()
+            }
+        })
+
+
+        if ($('#metode_pembayaran option:selected').attr("value") == 1) {
+                $('.syarat-pembayaran-gratis').show();
+            } else if ($('#metode_pembayaran option:selected').attr("value") == 2) {
+                $('.syarat-pembayaran-gratis').hide();
+            }
+        $('#metode_pembayaran').on('change', function () {
+            if ($('#metode_pembayaran option:selected').attr("value") == 1) {
+                $('.syarat-pembayaran-gratis').show();
+            } else if ($('#metode_pembayaran option:selected').attr("value") == 2) {
+                $('.syarat-pembayaran-gratis').hide();
+            }
+        })
+    </script>
+
+</body>
+
+</html>

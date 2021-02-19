@@ -1,0 +1,45 @@
+#navigasi-soal .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#navigasi-soal .card-body .box {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#navigasi-soal .card-body .box:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background-color: #4E73DF;
+  border: 1px solid #4E73DF;
+  color: white;
+}
+
+#navigasi-soal .card-body .box.active {
+  background-color: #4E73DF;
+  border: 1px solid #4E73DF;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

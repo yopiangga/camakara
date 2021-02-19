@@ -1,0 +1,39 @@
+
+
+#navigasi-soal{
+
+    .card-body {
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            transition: 300ms;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transition: 300ms;
+            background-color: #4E73DF;
+            border: 1px solid #4E73DF;
+            color: white;
+        }
+    
+
+        .box.active {
+            background-color: #4E73DF;
+            border: 1px solid #4E73DF;
+            color: white;
+        }
+    }
+}
