@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Event - Tryout</title>
+    <title>Event - Quiz</title>
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -58,15 +58,15 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tabel Data</span></a>
             </li>
-
-            <li class="nav-item active">
+            
+            <li class="nav-item">
                 <a class="nav-link" href="event-tryout-tabel.html">
                     <i class="fab fa-leanpub"></i>
                     <span>Tryout</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="event-quiz-tabel.html">
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="event-quiz-tabel.html">
                     <i class="fas fa-book-reader"></i>
                     <span>Quiz</span></a>
             </li>
@@ -137,106 +137,49 @@
                 <div class="container-fluid">
 
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Edit Penalaran Umum</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Detail Quiz</h1>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-8 col-md-12">
-                            <form>
+                    <div class="card shadow mb-4">
 
-                                <div class="form-group">
-                                    <label for="soal">Soal 1</label>
-                                    <textarea type="text" class="form-control" id="soal" name="soal"
-                                        rows="5"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="">Gambar Soal 1</label>
-                                    <input type="file" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Pilihan Jawaban</label>
-                                    <div class="form-group">
-                                        <label for="">Pilihan 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Pilihan 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Pilihan 3</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Pilihan 4</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Pilihan 5</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="">Jawaban Benar</label>
-                                    <select class="custom-select" id="jawaban_benar">
-                                        <option value="0" selected disabled>Pilihan</option>
-                                        <option value="1">Pilihan 1</option>
-                                        <option value="2">Pilihan 2</option>
-                                        <option value="3">Pilihan 3</option>
-                                        <option value="4">Pilihan 4</option>
-                                        <option value="5">Pilihan 5</option>
-
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="soal">Pembahasan Soal 1</label>
-                                    <textarea type="text" class="form-control" id="soal" name="soal"
-                                        rows="5"></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary">Simpan</button>
-                            </form>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card" id="navigasi-soal">
-                                <div class="card-body">
-                                    <div class="box active">1</div>
-                                    <div class="box">2</div>
-                                    <div class="box">3</div>
-                                    <div class="box">4</div>
-                                    <div class="box">5</div>
-                                    <div class="box">6</div>
-                                    <div class="box">7</div>
-                                    <div class="box">8</div>
-                                    <div class="box">9</div>
-                                    <div class="box">10</div>
-                                    <div class="box">11</div>
-                                    <div class="box">12</div>
-                                    <div class="box">13</div>
-                                    <div class="box">14</div>
-                                    <div class="box">15</div>
-                                    <div class="box">16</div>
-                                    <div class="box">17</div>
-                                    <div class="box">18</div>
-                                    <div class="box">19</div>
-                                    <div class="box">20</div>
-                                    <div class="box">21</div>
-                                    <div class="box">22</div>
-                                    <div class="box">23</div>
-                                    <div class="box">24</div>
-                                    <div class="box">25</div>
-                                    <div class="box">26</div>
-                                    <div class="box">27</div>
-                                    <div class="box">28</div>
-                                    <div class="box">29</div>
-                                    <div class="box">30</div>
-                                </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>Jumlah Soal</th>
+                                            <th>Waktu Pengerjaan</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>Jumlah Soal</th>
+                                            <th>Waktu Pengerjaan</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Biologi</td>
+                                            <td>30 Soal</td>
+                                            <td>30 Menit</td>
+                                            <td>
+                                                <a href="event-edit-subQuiz.html" class="badge badge-primary">Edit Soal</a>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
+
 
                 </div>
 
@@ -268,6 +211,7 @@
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

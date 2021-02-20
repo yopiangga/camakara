@@ -211,6 +211,7 @@
                                                 <option value="0" selected disabled>Pilihan</option>
                                                 <option value="1">Gratis</option>
                                                 <option value="2">Berbayar</option>
+                                                <option value="3">Bebas</option>
                                               </select>
                                         </div>
                                         <div class="syarat-pembayaran-gratis">
@@ -469,6 +470,8 @@
             if($('#metode_pembayaran option:selected').attr("value") == 1){
                 $('.syarat-pembayaran-gratis').show();
             } else if($('#metode_pembayaran option:selected').attr("value") == 2){
+                $('.syarat-pembayaran-gratis').hide();
+            } else if($('#metode_pembayaran option:selected').attr("value") == 3){
                 $('.syarat-pembayaran-gratis').hide();
             }
         })

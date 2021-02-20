@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Event - Edit Quiz</title>
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Camakara <sup></sup></div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="event.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Event
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="event-tabel-konfirmasi.html">
+                    <i class="fas fa-calendar-week"></i>
+                    <span>Tabel Konfirmasi</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="event-tabel-data.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tabel Data</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="event-tryout-tabel.html">
+                    <i class="fab fa-leanpub"></i>
+                    <span>Tryout</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="event-quiz-tabel.html">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Quiz</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Akun
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Profile</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="ubah-password.html">
+                    <i class="fas fa-fw fa-lock"></i>
+                    <span>Ubah Password</span></a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <div id="content">
+
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Yopiangga</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html" data-toggle="modal"
+                                    data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Keluar
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="container-fluid">
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Edit Quiz</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label for="">Nama Quiz</label>
+                                            <input type="text" class="form-control" value="Quiz Ngambis Februari">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Deskripsi Quiz</label>
+                                            <textarea class="form-control" rows="3">Quiz Ngambis Februari 2021</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Tanggal Mulai</label>
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Waktu Mulai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Tanggal Selesai</label>
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Waktu Selesai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Kelas Quiz</label>
+                                            <select class="custom-select" id="jenis_tryout">
+                                                <option value="0" disabled>Pilihan</option>
+                                                <option value="1" selected>SAINTEK</option>
+                                                <option value="2">SOSHUM</option>
+                                                <option value="3">TPS</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Mata Pelajaran</label>
+                                            <select class="custom-select" id="metode_pembayaran">
+                                                <option value="0" disabled>Pilihan</option>
+                                                <option value="1">Penalaran Umum</option>
+                                                <option value="2">Pemahaman Bacaan dan Menulis</option>
+                                                <option value="3">Pengetahuan dan Pemahaman Umum</option>
+                                                <option value="4">Pengetahuan Kuantitatif</option>
+                                                <option value="5">Kimia</option>
+                                                <option value="6">Fisika</option>
+                                                <option value="7" selected>Biologi</option>
+                                                <option value="8">Matematika Saintek</option>
+                                                <option value="9">Sejarah</option>
+                                                <option value="10">Geografi</option>
+                                                <option value="11">Sosiologi</option>
+                                                <option value="12">Ekonomi</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Waktu Pengerjaan (Menit)</label>
+                                            <input type="menit" class="form-control" value="60">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Kuota</label>
+                                            <input type="number" class="form-control" value="90">
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary">Perbarui</button>
+                                    </div>
+                                    
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label for="">Online Meetings</label>
+                                            <select class="custom-select" id="jenis_tryout">
+                                                <option value="0" disabled>Pilihan</option>
+                                                <option value="1" selected>Google Meet</option>
+                                                <option value="2">Zoom</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Direct Link</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Paasword</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Tanggal Selesai</label>
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Waktu Selesai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Camakara Admin 2021</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+
+
+</body>
+
+</html>
